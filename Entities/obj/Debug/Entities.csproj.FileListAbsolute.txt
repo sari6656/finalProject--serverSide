@@ -1,0 +1,438 @@
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\ServerSide\Entities\bin\Debug\Entities.dll
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\ServerSide\Entities\bin\Debug\Entities.pdb
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\ServerSide\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\ServerSide\Entities\obj\Debug\Entities.dll
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\ServerSide\Entities\obj\Debug\Entities.pdb
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\ServerSide\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\ServerSide\Entities\bin\Debug\Entities.dll.config
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\ServerSide\Entities\bin\Debug\EntityFramework.dll
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.dll
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\ServerSide\Entities\bin\Debug\EntityFramework.xml
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.xml
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\ServerSide\Entities\obj\Debug\Entities.csproj.CopyComplete
+E:\פרוייקט הסיום\16-05-19\ServerSide\Entities\bin\Debug\Entities.dll.config
+E:\פרוייקט הסיום\16-05-19\ServerSide\Entities\bin\Debug\Entities.dll
+E:\פרוייקט הסיום\16-05-19\ServerSide\Entities\bin\Debug\Entities.pdb
+E:\פרוייקט הסיום\16-05-19\ServerSide\Entities\bin\Debug\EntityFramework.dll
+E:\פרוייקט הסיום\16-05-19\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.dll
+E:\פרוייקט הסיום\16-05-19\ServerSide\Entities\bin\Debug\EntityFramework.xml
+E:\פרוייקט הסיום\16-05-19\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.xml
+E:\פרוייקט הסיום\16-05-19\ServerSide\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+E:\פרוייקט הסיום\16-05-19\ServerSide\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+E:\פרוייקט הסיום\16-05-19\ServerSide\Entities\obj\Debug\Entities.csproj.CopyComplete
+E:\פרוייקט הסיום\16-05-19\ServerSide\Entities\obj\Debug\Entities.dll
+E:\פרוייקט הסיום\16-05-19\ServerSide\Entities\obj\Debug\Entities.pdb
+E:\פרוייקט הסיום\16-05-19\ServerSide\Entities\bin\Debug\DAL.dll
+E:\פרוייקט הסיום\16-05-19\ServerSide\Entities\bin\Debug\DAL.pdb
+E:\פרוייקט הסיום\16-05-19\ServerSide\Entities\bin\Debug\DAL.dll.config
+C:\Users\User\Desktop\תכנות\שנה שנייה\הפרוייקט הסופי\ServerSide\Entities\bin\Debug\Entities.dll.config
+C:\Users\User\Desktop\תכנות\שנה שנייה\הפרוייקט הסופי\ServerSide\Entities\bin\Debug\Entities.dll
+C:\Users\User\Desktop\תכנות\שנה שנייה\הפרוייקט הסופי\ServerSide\Entities\bin\Debug\Entities.pdb
+C:\Users\User\Desktop\תכנות\שנה שנייה\הפרוייקט הסופי\ServerSide\Entities\bin\Debug\DAL.dll
+C:\Users\User\Desktop\תכנות\שנה שנייה\הפרוייקט הסופי\ServerSide\Entities\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\תכנות\שנה שנייה\הפרוייקט הסופי\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\תכנות\שנה שנייה\הפרוייקט הסופי\ServerSide\Entities\bin\Debug\DAL.pdb
+C:\Users\User\Desktop\תכנות\שנה שנייה\הפרוייקט הסופי\ServerSide\Entities\bin\Debug\DAL.dll.config
+C:\Users\User\Desktop\תכנות\שנה שנייה\הפרוייקט הסופי\ServerSide\Entities\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\תכנות\שנה שנייה\הפרוייקט הסופי\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\תכנות\שנה שנייה\הפרוייקט הסופי\ServerSide\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+C:\Users\User\Desktop\תכנות\שנה שנייה\הפרוייקט הסופי\ServerSide\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\תכנות\שנה שנייה\הפרוייקט הסופי\ServerSide\Entities\obj\Debug\Entities.csproj.CopyComplete
+C:\Users\User\Desktop\תכנות\שנה שנייה\הפרוייקט הסופי\ServerSide\Entities\obj\Debug\Entities.dll
+C:\Users\User\Desktop\תכנות\שנה שנייה\הפרוייקט הסופי\ServerSide\Entities\obj\Debug\Entities.pdb
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\ServerSide\Entities\bin\Debug\DAL.dll
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\ServerSide\Entities\bin\Debug\DAL.pdb
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\ServerSide\Entities\bin\Debug\DAL.dll.config
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\ServerSide\Entities\bin\Debug\Newtonsoft.Json.dll
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.dll
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\ServerSide\Entities\bin\Debug\System.Web.Cors.dll
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.dll
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\ServerSide\Entities\bin\Debug\System.Web.Http.dll
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\ServerSide\Entities\bin\Debug\Newtonsoft.Json.xml
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.xml
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\ServerSide\Entities\bin\Debug\System.Web.Http.xml
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.xml
+F:\פרוייקט הסיום\6יוני\18-06-19\ServerSide\Entities\bin\Debug\Entities.dll.config
+F:\פרוייקט הסיום\6יוני\18-06-19\ServerSide\Entities\bin\Debug\Entities.dll
+F:\פרוייקט הסיום\6יוני\18-06-19\ServerSide\Entities\bin\Debug\Entities.pdb
+F:\פרוייקט הסיום\6יוני\18-06-19\ServerSide\Entities\bin\Debug\DAL.dll
+F:\פרוייקט הסיום\6יוני\18-06-19\ServerSide\Entities\bin\Debug\EntityFramework.dll
+F:\פרוייקט הסיום\6יוני\18-06-19\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.dll
+F:\פרוייקט הסיום\6יוני\18-06-19\ServerSide\Entities\bin\Debug\Newtonsoft.Json.dll
+F:\פרוייקט הסיום\6יוני\18-06-19\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.dll
+F:\פרוייקט הסיום\6יוני\18-06-19\ServerSide\Entities\bin\Debug\System.Web.Cors.dll
+F:\פרוייקט הסיום\6יוני\18-06-19\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.dll
+F:\פרוייקט הסיום\6יוני\18-06-19\ServerSide\Entities\bin\Debug\System.Web.Http.dll
+F:\פרוייקט הסיום\6יוני\18-06-19\ServerSide\Entities\bin\Debug\DAL.pdb
+F:\פרוייקט הסיום\6יוני\18-06-19\ServerSide\Entities\bin\Debug\DAL.dll.config
+F:\פרוייקט הסיום\6יוני\18-06-19\ServerSide\Entities\bin\Debug\EntityFramework.xml
+F:\פרוייקט הסיום\6יוני\18-06-19\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.xml
+F:\פרוייקט הסיום\6יוני\18-06-19\ServerSide\Entities\bin\Debug\Newtonsoft.Json.xml
+F:\פרוייקט הסיום\6יוני\18-06-19\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.xml
+F:\פרוייקט הסיום\6יוני\18-06-19\ServerSide\Entities\bin\Debug\System.Web.Http.xml
+F:\פרוייקט הסיום\6יוני\18-06-19\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.xml
+F:\פרוייקט הסיום\6יוני\18-06-19\ServerSide\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+F:\פרוייקט הסיום\6יוני\18-06-19\ServerSide\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+F:\פרוייקט הסיום\6יוני\18-06-19\ServerSide\Entities\obj\Debug\Entities.csproj.CopyComplete
+F:\פרוייקט הסיום\6יוני\18-06-19\ServerSide\Entities\obj\Debug\Entities.dll
+F:\פרוייקט הסיום\6יוני\18-06-19\ServerSide\Entities\obj\Debug\Entities.pdb
+F:\פרוייקט הסיום\7יולי\01-07-19\ServerSide\Entities\bin\Debug\Entities.dll.config
+F:\פרוייקט הסיום\7יולי\01-07-19\ServerSide\Entities\bin\Debug\Entities.dll
+F:\פרוייקט הסיום\7יולי\01-07-19\ServerSide\Entities\bin\Debug\Entities.pdb
+F:\פרוייקט הסיום\7יולי\01-07-19\ServerSide\Entities\bin\Debug\DAL.dll
+F:\פרוייקט הסיום\7יולי\01-07-19\ServerSide\Entities\bin\Debug\EntityFramework.dll
+F:\פרוייקט הסיום\7יולי\01-07-19\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.dll
+F:\פרוייקט הסיום\7יולי\01-07-19\ServerSide\Entities\bin\Debug\Newtonsoft.Json.dll
+F:\פרוייקט הסיום\7יולי\01-07-19\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.dll
+F:\פרוייקט הסיום\7יולי\01-07-19\ServerSide\Entities\bin\Debug\System.Web.Cors.dll
+F:\פרוייקט הסיום\7יולי\01-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.dll
+F:\פרוייקט הסיום\7יולי\01-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.dll
+F:\פרוייקט הסיום\7יולי\01-07-19\ServerSide\Entities\bin\Debug\DAL.pdb
+F:\פרוייקט הסיום\7יולי\01-07-19\ServerSide\Entities\bin\Debug\DAL.dll.config
+F:\פרוייקט הסיום\7יולי\01-07-19\ServerSide\Entities\bin\Debug\EntityFramework.xml
+F:\פרוייקט הסיום\7יולי\01-07-19\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.xml
+F:\פרוייקט הסיום\7יולי\01-07-19\ServerSide\Entities\bin\Debug\Newtonsoft.Json.xml
+F:\פרוייקט הסיום\7יולי\01-07-19\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.xml
+F:\פרוייקט הסיום\7יולי\01-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.xml
+F:\פרוייקט הסיום\7יולי\01-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.xml
+F:\פרוייקט הסיום\7יולי\01-07-19\ServerSide\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+F:\פרוייקט הסיום\7יולי\01-07-19\ServerSide\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+F:\פרוייקט הסיום\7יולי\01-07-19\ServerSide\Entities\obj\Debug\Entities.csproj.CopyComplete
+F:\פרוייקט הסיום\7יולי\01-07-19\ServerSide\Entities\obj\Debug\Entities.dll
+F:\פרוייקט הסיום\7יולי\01-07-19\ServerSide\Entities\obj\Debug\Entities.pdb
+H:\final project\פרוייקט סיום-Remember\יולי\01-07-19\ServerSide\Entities\bin\Debug\Entities.dll.config
+H:\final project\פרוייקט סיום-Remember\יולי\01-07-19\ServerSide\Entities\bin\Debug\Entities.dll
+H:\final project\פרוייקט סיום-Remember\יולי\01-07-19\ServerSide\Entities\bin\Debug\Entities.pdb
+H:\final project\פרוייקט סיום-Remember\יולי\01-07-19\ServerSide\Entities\bin\Debug\DAL.dll
+H:\final project\פרוייקט סיום-Remember\יולי\01-07-19\ServerSide\Entities\bin\Debug\EntityFramework.dll
+H:\final project\פרוייקט סיום-Remember\יולי\01-07-19\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.dll
+H:\final project\פרוייקט סיום-Remember\יולי\01-07-19\ServerSide\Entities\bin\Debug\Newtonsoft.Json.dll
+H:\final project\פרוייקט סיום-Remember\יולי\01-07-19\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.dll
+H:\final project\פרוייקט סיום-Remember\יולי\01-07-19\ServerSide\Entities\bin\Debug\System.Web.Cors.dll
+H:\final project\פרוייקט סיום-Remember\יולי\01-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.dll
+H:\final project\פרוייקט סיום-Remember\יולי\01-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.dll
+H:\final project\פרוייקט סיום-Remember\יולי\01-07-19\ServerSide\Entities\bin\Debug\DAL.pdb
+H:\final project\פרוייקט סיום-Remember\יולי\01-07-19\ServerSide\Entities\bin\Debug\DAL.dll.config
+H:\final project\פרוייקט סיום-Remember\יולי\01-07-19\ServerSide\Entities\bin\Debug\EntityFramework.xml
+H:\final project\פרוייקט סיום-Remember\יולי\01-07-19\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.xml
+H:\final project\פרוייקט סיום-Remember\יולי\01-07-19\ServerSide\Entities\bin\Debug\Newtonsoft.Json.xml
+H:\final project\פרוייקט סיום-Remember\יולי\01-07-19\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.xml
+H:\final project\פרוייקט סיום-Remember\יולי\01-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.xml
+H:\final project\פרוייקט סיום-Remember\יולי\01-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.xml
+H:\final project\פרוייקט סיום-Remember\יולי\01-07-19\ServerSide\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+H:\final project\פרוייקט סיום-Remember\יולי\01-07-19\ServerSide\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+H:\final project\פרוייקט סיום-Remember\יולי\01-07-19\ServerSide\Entities\obj\Debug\Entities.csproj.CopyComplete
+H:\final project\פרוייקט סיום-Remember\יולי\01-07-19\ServerSide\Entities\obj\Debug\Entities.dll
+H:\final project\פרוייקט סיום-Remember\יולי\01-07-19\ServerSide\Entities\obj\Debug\Entities.pdb
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\final-project-remember\ServerSide\Entities\bin\Debug\Entities.dll.config
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\final-project-remember\ServerSide\Entities\bin\Debug\Entities.dll
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\final-project-remember\ServerSide\Entities\bin\Debug\Entities.pdb
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\final-project-remember\ServerSide\Entities\bin\Debug\DAL.dll
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\final-project-remember\ServerSide\Entities\bin\Debug\EntityFramework.dll
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\final-project-remember\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.dll
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\final-project-remember\ServerSide\Entities\bin\Debug\Newtonsoft.Json.dll
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\final-project-remember\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.dll
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\final-project-remember\ServerSide\Entities\bin\Debug\System.Web.Cors.dll
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\final-project-remember\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.dll
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\final-project-remember\ServerSide\Entities\bin\Debug\System.Web.Http.dll
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\final-project-remember\ServerSide\Entities\bin\Debug\DAL.pdb
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\final-project-remember\ServerSide\Entities\bin\Debug\DAL.dll.config
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\final-project-remember\ServerSide\Entities\bin\Debug\EntityFramework.xml
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\final-project-remember\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.xml
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\final-project-remember\ServerSide\Entities\bin\Debug\Newtonsoft.Json.xml
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\final-project-remember\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.xml
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\final-project-remember\ServerSide\Entities\bin\Debug\System.Web.Http.xml
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\final-project-remember\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.xml
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\final-project-remember\ServerSide\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\final-project-remember\ServerSide\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\final-project-remember\ServerSide\Entities\obj\Debug\Entities.csproj.CopyComplete
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\final-project-remember\ServerSide\Entities\obj\Debug\Entities.dll
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\final-project-remember\ServerSide\Entities\obj\Debug\Entities.pdb
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\10-07-19\ServerSide\Entities\bin\Debug\Entities.dll.config
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\10-07-19\ServerSide\Entities\bin\Debug\Entities.dll
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\10-07-19\ServerSide\Entities\bin\Debug\Entities.pdb
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\10-07-19\ServerSide\Entities\bin\Debug\DAL.dll
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\10-07-19\ServerSide\Entities\bin\Debug\EntityFramework.dll
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\10-07-19\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.dll
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\10-07-19\ServerSide\Entities\bin\Debug\Newtonsoft.Json.dll
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\10-07-19\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.dll
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\10-07-19\ServerSide\Entities\bin\Debug\System.Web.Cors.dll
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\10-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.dll
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\10-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.dll
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\10-07-19\ServerSide\Entities\bin\Debug\DAL.pdb
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\10-07-19\ServerSide\Entities\bin\Debug\DAL.dll.config
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\10-07-19\ServerSide\Entities\bin\Debug\EntityFramework.xml
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\10-07-19\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.xml
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\10-07-19\ServerSide\Entities\bin\Debug\Newtonsoft.Json.xml
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\10-07-19\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.xml
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\10-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.xml
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\10-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.xml
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\10-07-19\ServerSide\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\10-07-19\ServerSide\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\10-07-19\ServerSide\Entities\obj\Debug\Entities.csproj.CopyComplete
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\10-07-19\ServerSide\Entities\obj\Debug\Entities.dll
+Y:\group 2 תשעט\גולדמן  שרי\פרוייקט סיום-Remember\10-07-19\ServerSide\Entities\obj\Debug\Entities.pdb
+D:\10-07-19\ServerSide\Entities\bin\Debug\Entities.dll.config
+D:\10-07-19\ServerSide\Entities\bin\Debug\Entities.dll
+D:\10-07-19\ServerSide\Entities\bin\Debug\Entities.pdb
+D:\10-07-19\ServerSide\Entities\bin\Debug\DAL.dll
+D:\10-07-19\ServerSide\Entities\bin\Debug\EntityFramework.dll
+D:\10-07-19\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.dll
+D:\10-07-19\ServerSide\Entities\bin\Debug\Newtonsoft.Json.dll
+D:\10-07-19\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.dll
+D:\10-07-19\ServerSide\Entities\bin\Debug\System.Web.Cors.dll
+D:\10-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.dll
+D:\10-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.dll
+D:\10-07-19\ServerSide\Entities\bin\Debug\DAL.pdb
+D:\10-07-19\ServerSide\Entities\bin\Debug\DAL.dll.config
+D:\10-07-19\ServerSide\Entities\bin\Debug\EntityFramework.xml
+D:\10-07-19\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.xml
+D:\10-07-19\ServerSide\Entities\bin\Debug\Newtonsoft.Json.xml
+D:\10-07-19\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.xml
+D:\10-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.xml
+D:\10-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.xml
+D:\10-07-19\ServerSide\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+D:\10-07-19\ServerSide\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+D:\10-07-19\ServerSide\Entities\obj\Debug\Entities.csproj.CopyComplete
+D:\10-07-19\ServerSide\Entities\obj\Debug\Entities.dll
+D:\10-07-19\ServerSide\Entities\obj\Debug\Entities.pdb
+D:\15-07-19\ServerSide\Entities\bin\Debug\Entities.dll.config
+D:\15-07-19\ServerSide\Entities\bin\Debug\Entities.dll
+D:\15-07-19\ServerSide\Entities\bin\Debug\Entities.pdb
+D:\15-07-19\ServerSide\Entities\bin\Debug\DAL.dll
+D:\15-07-19\ServerSide\Entities\bin\Debug\EntityFramework.dll
+D:\15-07-19\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.dll
+D:\15-07-19\ServerSide\Entities\bin\Debug\Newtonsoft.Json.dll
+D:\15-07-19\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.dll
+D:\15-07-19\ServerSide\Entities\bin\Debug\System.Web.Cors.dll
+D:\15-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.dll
+D:\15-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.dll
+D:\15-07-19\ServerSide\Entities\bin\Debug\DAL.pdb
+D:\15-07-19\ServerSide\Entities\bin\Debug\DAL.dll.config
+D:\15-07-19\ServerSide\Entities\bin\Debug\EntityFramework.xml
+D:\15-07-19\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.xml
+D:\15-07-19\ServerSide\Entities\bin\Debug\Newtonsoft.Json.xml
+D:\15-07-19\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.xml
+D:\15-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.xml
+D:\15-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.xml
+D:\15-07-19\ServerSide\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+D:\15-07-19\ServerSide\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+D:\15-07-19\ServerSide\Entities\obj\Debug\Entities.csproj.CopyComplete
+D:\15-07-19\ServerSide\Entities\obj\Debug\Entities.dll
+D:\15-07-19\ServerSide\Entities\obj\Debug\Entities.pdb
+D:\16-07-19\ServerSide\Entities\bin\Debug\Entities.dll.config
+D:\16-07-19\ServerSide\Entities\bin\Debug\Entities.dll
+D:\16-07-19\ServerSide\Entities\bin\Debug\Entities.pdb
+D:\16-07-19\ServerSide\Entities\bin\Debug\DAL.dll
+D:\16-07-19\ServerSide\Entities\bin\Debug\EntityFramework.dll
+D:\16-07-19\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.dll
+D:\16-07-19\ServerSide\Entities\bin\Debug\Newtonsoft.Json.dll
+D:\16-07-19\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.dll
+D:\16-07-19\ServerSide\Entities\bin\Debug\System.Web.Cors.dll
+D:\16-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.dll
+D:\16-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.dll
+D:\16-07-19\ServerSide\Entities\bin\Debug\DAL.pdb
+D:\16-07-19\ServerSide\Entities\bin\Debug\DAL.dll.config
+D:\16-07-19\ServerSide\Entities\bin\Debug\EntityFramework.xml
+D:\16-07-19\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.xml
+D:\16-07-19\ServerSide\Entities\bin\Debug\Newtonsoft.Json.xml
+D:\16-07-19\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.xml
+D:\16-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.xml
+D:\16-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.xml
+D:\16-07-19\ServerSide\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+D:\16-07-19\ServerSide\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+D:\16-07-19\ServerSide\Entities\obj\Debug\Entities.csproj.CopyComplete
+D:\16-07-19\ServerSide\Entities\obj\Debug\Entities.dll
+D:\16-07-19\ServerSide\Entities\obj\Debug\Entities.pdb
+D:\22-07-19\ServerSide\Entities\bin\Debug\Entities.dll.config
+D:\22-07-19\ServerSide\Entities\bin\Debug\Entities.dll
+D:\22-07-19\ServerSide\Entities\bin\Debug\Entities.pdb
+D:\22-07-19\ServerSide\Entities\bin\Debug\DAL.dll
+D:\22-07-19\ServerSide\Entities\bin\Debug\EntityFramework.dll
+D:\22-07-19\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.dll
+D:\22-07-19\ServerSide\Entities\bin\Debug\Newtonsoft.Json.dll
+D:\22-07-19\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.dll
+D:\22-07-19\ServerSide\Entities\bin\Debug\System.Web.Cors.dll
+D:\22-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.dll
+D:\22-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.dll
+D:\22-07-19\ServerSide\Entities\bin\Debug\DAL.pdb
+D:\22-07-19\ServerSide\Entities\bin\Debug\DAL.dll.config
+D:\22-07-19\ServerSide\Entities\bin\Debug\EntityFramework.xml
+D:\22-07-19\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.xml
+D:\22-07-19\ServerSide\Entities\bin\Debug\Newtonsoft.Json.xml
+D:\22-07-19\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.xml
+D:\22-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.xml
+D:\22-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.xml
+D:\22-07-19\ServerSide\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+D:\22-07-19\ServerSide\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+D:\22-07-19\ServerSide\Entities\obj\Debug\Entities.csproj.CopyComplete
+D:\22-07-19\ServerSide\Entities\obj\Debug\Entities.dll
+D:\22-07-19\ServerSide\Entities\obj\Debug\Entities.pdb
+I:\final project\פרוייקט סיום-Remember\יולי\23-07-19\ServerSide\Entities\bin\Debug\Entities.dll.config
+I:\final project\פרוייקט סיום-Remember\יולי\23-07-19\ServerSide\Entities\bin\Debug\Entities.dll
+I:\final project\פרוייקט סיום-Remember\יולי\23-07-19\ServerSide\Entities\bin\Debug\Entities.pdb
+I:\final project\פרוייקט סיום-Remember\יולי\23-07-19\ServerSide\Entities\bin\Debug\DAL.dll
+I:\final project\פרוייקט סיום-Remember\יולי\23-07-19\ServerSide\Entities\bin\Debug\EntityFramework.dll
+I:\final project\פרוייקט סיום-Remember\יולי\23-07-19\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.dll
+I:\final project\פרוייקט סיום-Remember\יולי\23-07-19\ServerSide\Entities\bin\Debug\Newtonsoft.Json.dll
+I:\final project\פרוייקט סיום-Remember\יולי\23-07-19\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.dll
+I:\final project\פרוייקט סיום-Remember\יולי\23-07-19\ServerSide\Entities\bin\Debug\System.Web.Cors.dll
+I:\final project\פרוייקט סיום-Remember\יולי\23-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.dll
+I:\final project\פרוייקט סיום-Remember\יולי\23-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.dll
+I:\final project\פרוייקט סיום-Remember\יולי\23-07-19\ServerSide\Entities\bin\Debug\DAL.pdb
+I:\final project\פרוייקט סיום-Remember\יולי\23-07-19\ServerSide\Entities\bin\Debug\DAL.dll.config
+I:\final project\פרוייקט סיום-Remember\יולי\23-07-19\ServerSide\Entities\bin\Debug\EntityFramework.xml
+I:\final project\פרוייקט סיום-Remember\יולי\23-07-19\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.xml
+I:\final project\פרוייקט סיום-Remember\יולי\23-07-19\ServerSide\Entities\bin\Debug\Newtonsoft.Json.xml
+I:\final project\פרוייקט סיום-Remember\יולי\23-07-19\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.xml
+I:\final project\פרוייקט סיום-Remember\יולי\23-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.xml
+I:\final project\פרוייקט סיום-Remember\יולי\23-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.xml
+I:\final project\פרוייקט סיום-Remember\יולי\23-07-19\ServerSide\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+I:\final project\פרוייקט סיום-Remember\יולי\23-07-19\ServerSide\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+I:\final project\פרוייקט סיום-Remember\יולי\23-07-19\ServerSide\Entities\obj\Debug\Entities.csproj.CopyComplete
+I:\final project\פרוייקט סיום-Remember\יולי\23-07-19\ServerSide\Entities\obj\Debug\Entities.dll
+I:\final project\פרוייקט סיום-Remember\יולי\23-07-19\ServerSide\Entities\obj\Debug\Entities.pdb
+D:\23-07-19\ServerSide\Entities\bin\Debug\Entities.dll.config
+D:\23-07-19\ServerSide\Entities\bin\Debug\Entities.dll
+D:\23-07-19\ServerSide\Entities\bin\Debug\Entities.pdb
+D:\23-07-19\ServerSide\Entities\bin\Debug\DAL.dll
+D:\23-07-19\ServerSide\Entities\bin\Debug\EntityFramework.dll
+D:\23-07-19\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.dll
+D:\23-07-19\ServerSide\Entities\bin\Debug\Newtonsoft.Json.dll
+D:\23-07-19\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.dll
+D:\23-07-19\ServerSide\Entities\bin\Debug\System.Web.Cors.dll
+D:\23-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.dll
+D:\23-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.dll
+D:\23-07-19\ServerSide\Entities\bin\Debug\DAL.pdb
+D:\23-07-19\ServerSide\Entities\bin\Debug\DAL.dll.config
+D:\23-07-19\ServerSide\Entities\bin\Debug\EntityFramework.xml
+D:\23-07-19\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.xml
+D:\23-07-19\ServerSide\Entities\bin\Debug\Newtonsoft.Json.xml
+D:\23-07-19\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.xml
+D:\23-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.xml
+D:\23-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.xml
+D:\23-07-19\ServerSide\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+D:\23-07-19\ServerSide\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+D:\23-07-19\ServerSide\Entities\obj\Debug\Entities.csproj.CopyComplete
+D:\23-07-19\ServerSide\Entities\obj\Debug\Entities.dll
+D:\23-07-19\ServerSide\Entities\obj\Debug\Entities.pdb
+I:\final project\פרוייקט סיום-Remember\יולי\24-07-19\ServerSide\Entities\bin\Debug\Entities.dll.config
+I:\final project\פרוייקט סיום-Remember\יולי\24-07-19\ServerSide\Entities\bin\Debug\Entities.dll
+I:\final project\פרוייקט סיום-Remember\יולי\24-07-19\ServerSide\Entities\bin\Debug\Entities.pdb
+I:\final project\פרוייקט סיום-Remember\יולי\24-07-19\ServerSide\Entities\bin\Debug\DAL.dll
+I:\final project\פרוייקט סיום-Remember\יולי\24-07-19\ServerSide\Entities\bin\Debug\EntityFramework.dll
+I:\final project\פרוייקט סיום-Remember\יולי\24-07-19\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.dll
+I:\final project\פרוייקט סיום-Remember\יולי\24-07-19\ServerSide\Entities\bin\Debug\Newtonsoft.Json.dll
+I:\final project\פרוייקט סיום-Remember\יולי\24-07-19\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.dll
+I:\final project\פרוייקט סיום-Remember\יולי\24-07-19\ServerSide\Entities\bin\Debug\System.Web.Cors.dll
+I:\final project\פרוייקט סיום-Remember\יולי\24-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.dll
+I:\final project\פרוייקט סיום-Remember\יולי\24-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.dll
+I:\final project\פרוייקט סיום-Remember\יולי\24-07-19\ServerSide\Entities\bin\Debug\DAL.pdb
+I:\final project\פרוייקט סיום-Remember\יולי\24-07-19\ServerSide\Entities\bin\Debug\DAL.dll.config
+I:\final project\פרוייקט סיום-Remember\יולי\24-07-19\ServerSide\Entities\bin\Debug\EntityFramework.xml
+I:\final project\פרוייקט סיום-Remember\יולי\24-07-19\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.xml
+I:\final project\פרוייקט סיום-Remember\יולי\24-07-19\ServerSide\Entities\bin\Debug\Newtonsoft.Json.xml
+I:\final project\פרוייקט סיום-Remember\יולי\24-07-19\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.xml
+I:\final project\פרוייקט סיום-Remember\יולי\24-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.xml
+I:\final project\פרוייקט סיום-Remember\יולי\24-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.xml
+I:\final project\פרוייקט סיום-Remember\יולי\24-07-19\ServerSide\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+I:\final project\פרוייקט סיום-Remember\יולי\24-07-19\ServerSide\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+I:\final project\פרוייקט סיום-Remember\יולי\24-07-19\ServerSide\Entities\obj\Debug\Entities.csproj.CopyComplete
+I:\final project\פרוייקט סיום-Remember\יולי\24-07-19\ServerSide\Entities\obj\Debug\Entities.dll
+I:\final project\פרוייקט סיום-Remember\יולי\24-07-19\ServerSide\Entities\obj\Debug\Entities.pdb
+D:\29-07-19\ServerSide\Entities\bin\Debug\Entities.dll.config
+D:\29-07-19\ServerSide\Entities\bin\Debug\Entities.dll
+D:\29-07-19\ServerSide\Entities\bin\Debug\Entities.pdb
+D:\29-07-19\ServerSide\Entities\bin\Debug\DAL.dll
+D:\29-07-19\ServerSide\Entities\bin\Debug\EntityFramework.dll
+D:\29-07-19\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.dll
+D:\29-07-19\ServerSide\Entities\bin\Debug\Newtonsoft.Json.dll
+D:\29-07-19\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.dll
+D:\29-07-19\ServerSide\Entities\bin\Debug\System.Web.Cors.dll
+D:\29-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.dll
+D:\29-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.dll
+D:\29-07-19\ServerSide\Entities\bin\Debug\DAL.pdb
+D:\29-07-19\ServerSide\Entities\bin\Debug\DAL.dll.config
+D:\29-07-19\ServerSide\Entities\bin\Debug\EntityFramework.xml
+D:\29-07-19\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.xml
+D:\29-07-19\ServerSide\Entities\bin\Debug\Newtonsoft.Json.xml
+D:\29-07-19\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.xml
+D:\29-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.xml
+D:\29-07-19\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.xml
+D:\29-07-19\ServerSide\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+D:\29-07-19\ServerSide\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+D:\29-07-19\ServerSide\Entities\obj\Debug\Entities.csproj.CopyComplete
+D:\29-07-19\ServerSide\Entities\obj\Debug\Entities.dll
+D:\29-07-19\ServerSide\Entities\obj\Debug\Entities.pdb
+D:\29-07-19\finalProject\ServerSide\Entities\bin\Debug\Entities.dll.config
+D:\29-07-19\finalProject\ServerSide\Entities\bin\Debug\Entities.dll
+D:\29-07-19\finalProject\ServerSide\Entities\bin\Debug\Entities.pdb
+D:\29-07-19\finalProject\ServerSide\Entities\bin\Debug\DAL.dll
+D:\29-07-19\finalProject\ServerSide\Entities\bin\Debug\EntityFramework.dll
+D:\29-07-19\finalProject\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.dll
+D:\29-07-19\finalProject\ServerSide\Entities\bin\Debug\Newtonsoft.Json.dll
+D:\29-07-19\finalProject\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.dll
+D:\29-07-19\finalProject\ServerSide\Entities\bin\Debug\System.Web.Cors.dll
+D:\29-07-19\finalProject\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.dll
+D:\29-07-19\finalProject\ServerSide\Entities\bin\Debug\System.Web.Http.dll
+D:\29-07-19\finalProject\ServerSide\Entities\bin\Debug\DAL.pdb
+D:\29-07-19\finalProject\ServerSide\Entities\bin\Debug\DAL.dll.config
+D:\29-07-19\finalProject\ServerSide\Entities\bin\Debug\EntityFramework.xml
+D:\29-07-19\finalProject\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.xml
+D:\29-07-19\finalProject\ServerSide\Entities\bin\Debug\Newtonsoft.Json.xml
+D:\29-07-19\finalProject\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.xml
+D:\29-07-19\finalProject\ServerSide\Entities\bin\Debug\System.Web.Http.xml
+D:\29-07-19\finalProject\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.xml
+D:\29-07-19\finalProject\ServerSide\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+D:\29-07-19\finalProject\ServerSide\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+D:\29-07-19\finalProject\ServerSide\Entities\obj\Debug\Entities.csproj.CopyComplete
+D:\29-07-19\finalProject\ServerSide\Entities\obj\Debug\Entities.dll
+D:\29-07-19\finalProject\ServerSide\Entities\obj\Debug\Entities.pdb
+C:\Users\lenovo\Downloads\finalProject\ServerSide\Entities\bin\Debug\Entities.dll.config
+C:\Users\lenovo\Downloads\finalProject\ServerSide\Entities\bin\Debug\Entities.dll
+C:\Users\lenovo\Downloads\finalProject\ServerSide\Entities\bin\Debug\Entities.pdb
+C:\Users\lenovo\Downloads\finalProject\ServerSide\Entities\bin\Debug\DAL.dll
+C:\Users\lenovo\Downloads\finalProject\ServerSide\Entities\bin\Debug\EntityFramework.dll
+C:\Users\lenovo\Downloads\finalProject\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\lenovo\Downloads\finalProject\ServerSide\Entities\bin\Debug\Newtonsoft.Json.dll
+C:\Users\lenovo\Downloads\finalProject\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\lenovo\Downloads\finalProject\ServerSide\Entities\bin\Debug\System.Web.Cors.dll
+C:\Users\lenovo\Downloads\finalProject\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.dll
+C:\Users\lenovo\Downloads\finalProject\ServerSide\Entities\bin\Debug\System.Web.Http.dll
+C:\Users\lenovo\Downloads\finalProject\ServerSide\Entities\bin\Debug\DAL.pdb
+C:\Users\lenovo\Downloads\finalProject\ServerSide\Entities\bin\Debug\DAL.dll.config
+C:\Users\lenovo\Downloads\finalProject\ServerSide\Entities\bin\Debug\EntityFramework.xml
+C:\Users\lenovo\Downloads\finalProject\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\lenovo\Downloads\finalProject\ServerSide\Entities\bin\Debug\Newtonsoft.Json.xml
+C:\Users\lenovo\Downloads\finalProject\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\lenovo\Downloads\finalProject\ServerSide\Entities\bin\Debug\System.Web.Http.xml
+C:\Users\lenovo\Downloads\finalProject\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.xml
+C:\Users\lenovo\Downloads\finalProject\ServerSide\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+C:\Users\lenovo\Downloads\finalProject\ServerSide\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Downloads\finalProject\ServerSide\Entities\obj\Debug\Entities.csproj.CopyComplete
+C:\Users\lenovo\Downloads\finalProject\ServerSide\Entities\obj\Debug\Entities.dll
+C:\Users\lenovo\Downloads\finalProject\ServerSide\Entities\obj\Debug\Entities.pdb
+C:\Users\USER\Desktop\הפרוייקט הסופי\finalProject\ServerSide\Entities\bin\Debug\Entities.dll.config
+C:\Users\USER\Desktop\הפרוייקט הסופי\finalProject\ServerSide\Entities\bin\Debug\Entities.dll
+C:\Users\USER\Desktop\הפרוייקט הסופי\finalProject\ServerSide\Entities\bin\Debug\Entities.pdb
+C:\Users\USER\Desktop\הפרוייקט הסופי\finalProject\ServerSide\Entities\bin\Debug\DAL.dll
+C:\Users\USER\Desktop\הפרוייקט הסופי\finalProject\ServerSide\Entities\bin\Debug\EntityFramework.dll
+C:\Users\USER\Desktop\הפרוייקט הסופי\finalProject\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\USER\Desktop\הפרוייקט הסופי\finalProject\ServerSide\Entities\bin\Debug\Newtonsoft.Json.dll
+C:\Users\USER\Desktop\הפרוייקט הסופי\finalProject\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\USER\Desktop\הפרוייקט הסופי\finalProject\ServerSide\Entities\bin\Debug\System.Web.Cors.dll
+C:\Users\USER\Desktop\הפרוייקט הסופי\finalProject\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.dll
+C:\Users\USER\Desktop\הפרוייקט הסופי\finalProject\ServerSide\Entities\bin\Debug\System.Web.Http.dll
+C:\Users\USER\Desktop\הפרוייקט הסופי\finalProject\ServerSide\Entities\bin\Debug\DAL.pdb
+C:\Users\USER\Desktop\הפרוייקט הסופי\finalProject\ServerSide\Entities\bin\Debug\DAL.dll.config
+C:\Users\USER\Desktop\הפרוייקט הסופי\finalProject\ServerSide\Entities\bin\Debug\EntityFramework.xml
+C:\Users\USER\Desktop\הפרוייקט הסופי\finalProject\ServerSide\Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\USER\Desktop\הפרוייקט הסופי\finalProject\ServerSide\Entities\bin\Debug\Newtonsoft.Json.xml
+C:\Users\USER\Desktop\הפרוייקט הסופי\finalProject\ServerSide\Entities\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\USER\Desktop\הפרוייקט הסופי\finalProject\ServerSide\Entities\bin\Debug\System.Web.Http.xml
+C:\Users\USER\Desktop\הפרוייקט הסופי\finalProject\ServerSide\Entities\bin\Debug\System.Web.Http.Cors.xml
+C:\Users\USER\Desktop\הפרוייקט הסופי\finalProject\ServerSide\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\הפרוייקט הסופי\finalProject\ServerSide\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\הפרוייקט הסופי\finalProject\ServerSide\Entities\obj\Debug\Entities.csproj.CopyComplete
+C:\Users\USER\Desktop\הפרוייקט הסופי\finalProject\ServerSide\Entities\obj\Debug\Entities.dll
+C:\Users\USER\Desktop\הפרוייקט הסופי\finalProject\ServerSide\Entities\obj\Debug\Entities.pdb

@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProjectModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="codeCategory" />
+    </Key>
+    <Property Name="codeCategory" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nameCategory" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Category_to_shop" Relationship="Self.fk_constraint2" FromRole="Categories" ToRole="Category_to_shop" />
+    <NavigationProperty Name="Searches" Relationship="Self.fk_constraint5" FromRole="Categories" ToRole="Searches" />
+  </EntityType>
+  <EntityType Name="Category_to_shop">
+    <Key>
+      <PropertyRef Name="codeCTS" />
+    </Key>
+    <Property Name="codeCTS" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codeShop" Type="Int32" Nullable="false" />
+    <Property Name="codeCategory" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Category" Relationship="Self.fk_constraint2" FromRole="Category_to_shop" ToRole="Categories" />
+    <NavigationProperty Name="Shop" Relationship="Self.fk_constraint1" FromRole="Category_to_shop" ToRole="Shops" />
+  </EntityType>
+  <EntityType Name="Search">
+    <Key>
+      <PropertyRef Name="codeSearch" />
+    </Key>
+    <Property Name="codeSearch" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codeUser" Type="Int32" Nullable="false" />
+    <Property Name="nameProduct" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="codeCategory" Type="Int32" Nullable="false" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <Property Name="codeShop" Type="Int32" />
+    <NavigationProperty Name="Category" Relationship="Self.fk_constraint5" FromRole="Searches" ToRole="Categories" />
+    <NavigationProperty Name="User" Relationship="Self.fk_constraint6" FromRole="Searches" ToRole="Users" />
+    <NavigationProperty Name="Shop" Relationship="Self.fk_constraint7" FromRole="Searches" ToRole="Shops" />
+  </EntityType>
+  <EntityType Name="Shop">
+    <Key>
+      <PropertyRef Name="codeShop" />
+    </Key>
+    <Property Name="codeShop" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nameShop" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="passwordShop" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="phoneShop" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="mailShop" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="latitude" Type="Double" Nullable="false" />
+    <Property Name="longitude" Type="Double" Nullable="false" />
+    <Property Name="fromHour" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="toHour" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="addressString" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Category_to_shop" Relationship="Self.fk_constraint1" FromRole="Shops" ToRole="Category_to_shop" />
+    <NavigationProperty Name="Searches" Relationship="Self.fk_constraint7" FromRole="Shops" ToRole="Searches" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="codeUser" />
+    </Key>
+    <Property Name="codeUser" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nameUser" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="phoneUser" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="mailUser" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="passwordUser" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Searches" Relationship="Self.fk_constraint6" FromRole="Users" ToRole="Searches" />
+  </EntityType>
+  <Association Name="fk_constraint2">
+    <End Role="Categories" Type="Self.Category" Multiplicity="1" />
+    <End Role="Category_to_shop" Type="Self.Category_to_shop" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categories">
+        <PropertyRef Name="codeCategory" />
+      </Principal>
+      <Dependent Role="Category_to_shop">
+        <PropertyRef Name="codeCategory" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_constraint5">
+    <End Role="Categories" Type="Self.Category" Multiplicity="1" />
+    <End Role="Searches" Type="Self.Search" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categories">
+        <PropertyRef Name="codeCategory" />
+      </Principal>
+      <Dependent Role="Searches">
+        <PropertyRef Name="codeCategory" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_constraint1">
+    <End Role="Shops" Type="Self.Shop" Multiplicity="1" />
+    <End Role="Category_to_shop" Type="Self.Category_to_shop" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Shops">
+        <PropertyRef Name="codeShop" />
+      </Principal>
+      <Dependent Role="Category_to_shop">
+        <PropertyRef Name="codeShop" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_constraint6">
+    <End Role="Users" Type="Self.User" Multiplicity="1" />
+    <End Role="Searches" Type="Self.Search" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="codeUser" />
+      </Principal>
+      <Dependent Role="Searches">
+        <PropertyRef Name="codeUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_constraint7">
+    <End Role="Shops" Type="Self.Shop" Multiplicity="0..1" />
+    <End Role="Searches" Type="Self.Search" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Shops">
+        <PropertyRef Name="codeShop" />
+      </Principal>
+      <Dependent Role="Searches">
+        <PropertyRef Name="codeShop" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ProjectEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Categories" EntityType="Self.Category" />
+    <EntitySet Name="Category_to_shop" EntityType="Self.Category_to_shop" />
+    <EntitySet Name="Searches" EntityType="Self.Search" />
+    <EntitySet Name="Shops" EntityType="Self.Shop" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <AssociationSet Name="fk_constraint2" Association="Self.fk_constraint2">
+      <End Role="Categories" EntitySet="Categories" />
+      <End Role="Category_to_shop" EntitySet="Category_to_shop" />
+    </AssociationSet>
+    <AssociationSet Name="fk_constraint5" Association="Self.fk_constraint5">
+      <End Role="Categories" EntitySet="Categories" />
+      <End Role="Searches" EntitySet="Searches" />
+    </AssociationSet>
+    <AssociationSet Name="fk_constraint1" Association="Self.fk_constraint1">
+      <End Role="Shops" EntitySet="Shops" />
+      <End Role="Category_to_shop" EntitySet="Category_to_shop" />
+    </AssociationSet>
+    <AssociationSet Name="fk_constraint6" Association="Self.fk_constraint6">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Searches" EntitySet="Searches" />
+    </AssociationSet>
+    <AssociationSet Name="fk_constraint7" Association="Self.fk_constraint7">
+      <End Role="Shops" EntitySet="Shops" />
+      <End Role="Searches" EntitySet="Searches" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

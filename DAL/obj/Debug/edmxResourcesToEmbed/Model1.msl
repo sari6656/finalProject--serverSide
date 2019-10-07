@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ProjectModelStoreContainer" CdmEntityContainer="ProjectEntities">
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="ProjectModel.Category">
+        <MappingFragment StoreEntitySet="Categories">
+          <ScalarProperty Name="codeCategory" ColumnName="codeCategory" />
+          <ScalarProperty Name="nameCategory" ColumnName="nameCategory" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Category_to_shop">
+      <EntityTypeMapping TypeName="ProjectModel.Category_to_shop">
+        <MappingFragment StoreEntitySet="Category_to_shop">
+          <ScalarProperty Name="codeCTS" ColumnName="codeCTS" />
+          <ScalarProperty Name="codeShop" ColumnName="codeShop" />
+          <ScalarProperty Name="codeCategory" ColumnName="codeCategory" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Searches">
+      <EntityTypeMapping TypeName="ProjectModel.Search">
+        <MappingFragment StoreEntitySet="Searches">
+          <ScalarProperty Name="codeSearch" ColumnName="codeSearch" />
+          <ScalarProperty Name="codeUser" ColumnName="codeUser" />
+          <ScalarProperty Name="nameProduct" ColumnName="nameProduct" />
+          <ScalarProperty Name="codeCategory" ColumnName="codeCategory" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="codeShop" ColumnName="codeShop" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Shops">
+      <EntityTypeMapping TypeName="ProjectModel.Shop">
+        <MappingFragment StoreEntitySet="Shops">
+          <ScalarProperty Name="codeShop" ColumnName="codeShop" />
+          <ScalarProperty Name="nameShop" ColumnName="nameShop" />
+          <ScalarProperty Name="passwordShop" ColumnName="passwordShop" />
+          <ScalarProperty Name="phoneShop" ColumnName="phoneShop" />
+          <ScalarProperty Name="mailShop" ColumnName="mailShop" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="fromHour" ColumnName="fromHour" />
+          <ScalarProperty Name="toHour" ColumnName="toHour" />
+          <ScalarProperty Name="addressString" ColumnName="addressString" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="ProjectModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ProjectModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="codeUser" ColumnName="codeUser" />
+          <ScalarProperty Name="nameUser" ColumnName="nameUser" />
+          <ScalarProperty Name="phoneUser" ColumnName="phoneUser" />
+          <ScalarProperty Name="mailUser" ColumnName="mailUser" />
+          <ScalarProperty Name="passwordUser" ColumnName="passwordUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
