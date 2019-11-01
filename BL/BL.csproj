@@ -74,6 +74,7 @@
     <Compile Include="Helpers\LoggedUserAttribute.cs" />
     <Compile Include="Helpers\LoginData.cs" />
     <Compile Include="Helpers\PlacesAndLocations.cs" />
+    <Compile Include="Helpers\SearchesForShop.cs" />
     <Compile Include="Helpers\ShopDetailsForUsers.cs" />
     <Compile Include="Helpers\WebResult.cs" />
     <Compile Include="Searches.cs" />

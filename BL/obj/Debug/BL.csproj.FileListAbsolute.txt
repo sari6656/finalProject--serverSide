@@ -551,3 +551,32 @@ C:\Users\USER\Desktop\הפרוייקט הסופי\finalProject\ServerSide\BL\bin
 C:\Users\USER\Desktop\הפרוייקט הסופי\finalProject\ServerSide\BL\bin\Debug\log4net.xml
 C:\Users\lenovo\Downloads\finalProject\ServerSide\BL\bin\Debug\log4net.dll
 C:\Users\lenovo\Downloads\finalProject\ServerSide\BL\bin\Debug\log4net.xml
+C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\BL\bin\Debug\BL.dll.config
+C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\BL\bin\Debug\BL.dll
+C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\BL\bin\Debug\BL.pdb
+C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\BL\bin\Debug\DAL.dll
+C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\BL\bin\Debug\Entities.dll
+C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\BL\bin\Debug\EntityFramework.dll
+C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\BL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\BL\bin\Debug\log4net.dll
+C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\BL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\BL\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\BL\bin\Debug\System.Web.Cors.dll
+C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\BL\bin\Debug\System.Web.Http.Cors.dll
+C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\BL\bin\Debug\System.Web.Http.dll
+C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\BL\bin\Debug\DAL.pdb
+C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\BL\bin\Debug\DAL.dll.config
+C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\BL\bin\Debug\Entities.pdb
+C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\BL\bin\Debug\Entities.dll.config
+C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\BL\bin\Debug\EntityFramework.xml
+C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\BL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\BL\bin\Debug\log4net.xml
+C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\BL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\BL\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\BL\bin\Debug\System.Web.Http.xml
+C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\BL\bin\Debug\System.Web.Http.Cors.xml
+C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\BL\obj\Debug\BL.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\BL\obj\Debug\BL.csproj.CopyComplete
+C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\BL\obj\Debug\BL.dll
+C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\BL\obj\Debug\BL.pdb

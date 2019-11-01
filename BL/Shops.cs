@@ -118,7 +118,7 @@ namespace BL
             //        Value = null,
             //        Status = false
             //    };
-            Shop shop = db.Shops.FirstOrDefault(f=>f.mailShop==shopDTO.mailShop);
+            Shop shop = db.Shops.FirstOrDefault(f => f.mailShop == shopDTO.mailShop);
             //למייל אסור להשתנות
             if (shop == null)
                 return new WebResult<ShopDTO>
@@ -224,29 +224,30 @@ namespace BL
             db.SaveChanges();
             return true;
         }
-        //  הפונקציה מביאה לחנות את כל החיפושים שנמצאו אצלה
-        public static WebResult<List<SearchDTO>> getSearchesForShop(int codeShop)
+        //  הפונקציה מחזירה לחנות את כל החיפושים שנמצאו אצלה
+        public static WebResult<SearchesForShop> getSearchesForShop([UserLogged] ShopDTO shopDTO)
         {
-            //בדיקת אבטחה...
-            if (codeShop != (HttpContext.Current.Session["Shop"] as Shop).codeShop)
-                return new WebResult<List<SearchDTO>>
-                {
-                    Message = "שגיאת אבטחה, חנות לא תואמת",
-                    Value = null,
-                    Status = false
-                };
-            List<SearchDTO> searchDTOs = new List<SearchDTO>();
-            foreach (var item in db.Searches)
+            SearchesForShop searchesForShop= new SearchesForShop();
+            foreach (var category in shopDTO.Categories)
             {
-
-                if (item.status == 1 && item.codeShop == (HttpContext.Current.Session["Shop"] as Shop).codeShop)
-                    searchDTOs.Add(SearchCast.GetSearchDTO(item));
+                
+                //הוספת שם הקטגוריה
+                searchesForShop.namesCategories.Add(category.nameCategory);
+                //מתחילים לספור כמה יש מהקטגוריה הזו
+                int counter = 0;
+                foreach (var search in db.Searches)
+                {
+                    if (search.codeCategory == category.codeCategory)
+                        counter++;
+                }
+                searchesForShop.numbersCategories.Add(counter);
             }
-            return new WebResult<List<SearchDTO>>
+            
+            return new WebResult<SearchesForShop>
             {
                 Message = "רשימת החיפושים לחנות נשלחה בהצלחה",
                 Status = true,
-                Value = searchDTOs
+                Value = searchesForShop
             };
         }
 

@@ -51,9 +51,9 @@ namespace WebService.Controllers
 
         [Route("GetSearches")]
         [HttpGet]
-        public IHttpActionResult GetSearches(int codeShop)
+        public IHttpActionResult GetSearches([UserLogged] ShopDTO shopDTO)
         {
-            return Ok(Shops.getSearchesForShop(codeShop));
+            return Ok(Shops.getSearchesForShop(shopDTO));
         }
 
         [Route("GetAllCategories")]
