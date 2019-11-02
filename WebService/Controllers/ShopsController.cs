@@ -27,7 +27,7 @@ namespace WebService.Controllers
         {
             return Ok(await Shops.Login(mail, password, Request.RequestUri));
         }
-        //הפונקציה מחזירה מי החנות עכשיו
+        //Who is the current shop
         [Route("getLoggedShop")]
         [HttpGet]
         public IHttpActionResult GetLoggedShop([UserLogged] ShopDTO shopDTO)
@@ -49,6 +49,7 @@ namespace WebService.Controllers
             return Ok(Shops.Update(shop));
         }
 
+        //Get searches for shop, for statistics
         [Route("GetSearches")]
         [HttpGet]
         public IHttpActionResult GetSearches([UserLogged] ShopDTO shopDTO)
@@ -63,6 +64,7 @@ namespace WebService.Controllers
             return Ok(Shops.GetAllCategories());
         }
 
+        //Request for new category
         [Route("NewCategory")]
         [HttpGet]
         public IHttpActionResult NewCategory(string newCategory, [UserLogged] ShopDTO shopDTO)

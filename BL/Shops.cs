@@ -110,14 +110,6 @@ namespace BL
         //עדכון חנות עם קטגוריות
         public static WebResult<ShopDTO> Update(ShopDTO shopDTO)
         {
-            //אבטחה, אם המשתמש השתנה לא בצורה נכונה
-            //if (shopDTO.codeShop != (HttpContext.Current.Session["Shop"] as Shop).codeShop)
-            //    return new WebResult<ShopDTO>
-            //    {
-            //        Message = "שגיאת אבטחה, חנות לא תואמת",
-            //        Value = null,
-            //        Status = false
-            //    };
             Shop shop = db.Shops.FirstOrDefault(f => f.mailShop == shopDTO.mailShop);
             //למייל אסור להשתנות
             if (shop == null)

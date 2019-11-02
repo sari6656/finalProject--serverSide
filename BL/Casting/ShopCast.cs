@@ -8,10 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace BL.Casting
-{//מושלם צריך לבדוק, ובעיון
+{
     class ShopCast
     {
         public static ProjectEntities db = new ProjectEntities();
+        //Convert from shop to shopDTO
         public static ShopDTO GetShopDTO(Shop shop)
         {
             var cat = CategoryCast.GetCategoriesDTO(shop.Category_to_shop.Select(s => s.Category).ToList());
@@ -30,6 +31,7 @@ namespace BL.Casting
                 Categories=cat
             };
         }
+        //Convert from ShopDTO to Shop
         public static Shop GetShop(ShopDTO shop)
         {
             return new Shop()
@@ -46,7 +48,7 @@ namespace BL.Casting
                 addressString=shop.addressString
             };
         }
-        //המרת רשימה שלמה
+        //Conver a list of shops to list of shopDTOs
         public static List<ShopDTO> GetShopsDTO(List<Shop> shops)
         {
             List<ShopDTO> shopDTOs = new List<ShopDTO>();
