@@ -460,3 +460,27 @@ C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverS
 C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\Entities\obj\Debug\Entities.csproj.CopyComplete
 C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\Entities\obj\Debug\Entities.dll
 C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\Entities\obj\Debug\Entities.pdb
+C:\Users\lenovo\Downloads\finalProject--serverSide\Entities\bin\Debug\Entities.dll.config
+C:\Users\lenovo\Downloads\finalProject--serverSide\Entities\bin\Debug\Entities.dll
+C:\Users\lenovo\Downloads\finalProject--serverSide\Entities\bin\Debug\Entities.pdb
+C:\Users\lenovo\Downloads\finalProject--serverSide\Entities\bin\Debug\DAL.dll
+C:\Users\lenovo\Downloads\finalProject--serverSide\Entities\bin\Debug\EntityFramework.dll
+C:\Users\lenovo\Downloads\finalProject--serverSide\Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\lenovo\Downloads\finalProject--serverSide\Entities\bin\Debug\Newtonsoft.Json.dll
+C:\Users\lenovo\Downloads\finalProject--serverSide\Entities\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\lenovo\Downloads\finalProject--serverSide\Entities\bin\Debug\System.Web.Cors.dll
+C:\Users\lenovo\Downloads\finalProject--serverSide\Entities\bin\Debug\System.Web.Http.Cors.dll
+C:\Users\lenovo\Downloads\finalProject--serverSide\Entities\bin\Debug\System.Web.Http.dll
+C:\Users\lenovo\Downloads\finalProject--serverSide\Entities\bin\Debug\DAL.pdb
+C:\Users\lenovo\Downloads\finalProject--serverSide\Entities\bin\Debug\DAL.dll.config
+C:\Users\lenovo\Downloads\finalProject--serverSide\Entities\bin\Debug\EntityFramework.xml
+C:\Users\lenovo\Downloads\finalProject--serverSide\Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\lenovo\Downloads\finalProject--serverSide\Entities\bin\Debug\Newtonsoft.Json.xml
+C:\Users\lenovo\Downloads\finalProject--serverSide\Entities\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\lenovo\Downloads\finalProject--serverSide\Entities\bin\Debug\System.Web.Http.xml
+C:\Users\lenovo\Downloads\finalProject--serverSide\Entities\bin\Debug\System.Web.Http.Cors.xml
+C:\Users\lenovo\Downloads\finalProject--serverSide\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+C:\Users\lenovo\Downloads\finalProject--serverSide\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Downloads\finalProject--serverSide\Entities\obj\Debug\Entities.csproj.CopyComplete
+C:\Users\lenovo\Downloads\finalProject--serverSide\Entities\obj\Debug\Entities.dll
+C:\Users\lenovo\Downloads\finalProject--serverSide\Entities\obj\Debug\Entities.pdb
