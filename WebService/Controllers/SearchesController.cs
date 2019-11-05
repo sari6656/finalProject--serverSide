@@ -31,7 +31,19 @@ namespace WebService.Controllers
         [HttpGet]
         public IHttpActionResult GetHistory()
         {
-            return Ok(Searches.GetSearchesByUserId());
+            return Ok(Searches.GetHistory());
+        }
+        [Route("GetHistoryFound")]
+        [HttpGet]
+        public IHttpActionResult GetHistoryFound()
+        {
+            return Ok(Searches.GetHistoryFound());
+        }
+        [Route("GetHistoryNotFound")]
+        [HttpGet]
+        public IHttpActionResult GetHistoryNotFound()
+        {
+            return Ok(Searches.GetHistoryNotFound());
         }
         [Route("GetShopsForCategory")]
         [HttpGet]

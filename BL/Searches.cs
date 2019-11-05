@@ -96,56 +96,77 @@ namespace BL
             };
         }
         //פונקציה שמחזירה למשתמש את כל החיפושים שלו כולל אלו שמצא
-        //מה עדיף? לקבל אובייקט של משתמש או רק המזהה, כי אם נקבל אובייקט נוכל מיד לגשת לרשימה של החיפושים???????????
-        public static WebResult<List<SearchDTO>> GetSearchesByUserId()
+        public static WebResult<List<SearchDetailsForUser>> GetHistory()
         {
-            if ((HttpContext.Current.Session["User"] as User)==null)
-                return new WebResult<List<SearchDTO>>
+           //איך יודעים מי המשתמש
+            User CurrentUser = db.Users.First();
+            List<SearchDetailsForUser> searchesForUser = new List<SearchDetailsForUser>();
+            foreach (var search in db.Searches)
+            {
+                if(search.codeUser == CurrentUser.codeUser && search.status != 2)
                 {
-                    Message = "שגיאת אבטחה, משתמש לא תואם",
-                    Value = null,
-                    Status = false
-                };
-            User CurrentUser = HttpContext.Current.Session["User"] as User;
-            List<Search> searches = db.Searches.Where(w => w.codeUser == CurrentUser.codeUser && w.status!=2).ToList();
-            return new WebResult<List<SearchDTO>>
+                    searchesForUser.Add(new SearchDetailsForUser()
+                    {
+                        nameProduct = search.nameProduct,
+                        nameCategory = db.Categories.First(f=>f.codeCategory==search.codeCategory).nameCategory,
+                        status = search.status,
+                        nameShop = search.codeShop == null?"":db.Shops.First(f=>f.codeShop == search.codeShop).nameShop
+                    });
+                }
+            }
+            return new WebResult<List<SearchDetailsForUser>>
             {
                 Message = "חיפושי המשתמש נשלחו בהצלחה",
-                Value = SearchCast.GetSearchesDTO(searches),
+                Value = searchesForUser,
                 Status = true
             };
         }
         //פונקציה שמחזירה למשתמש את כל החיפושים שעדיין לא נמצאו
-        public static WebResult<List<SearchDTO>> GetNotfoundSearchesByUserId(int userId)
+        public static WebResult<List<SearchDetailsForUser>> GetHistoryNotFound()
         {
-            if ((HttpContext.Current.Session["User"] as User).codeUser != userId)
-                return new WebResult<List<SearchDTO>>
-                {
-                    Message = "שגיאת אבטחה, משתמש לא תואם",
-                    Value = null,
-                    Status = false
-                };
-            return new WebResult<List<SearchDTO>>
+            User CurrentUser = db.Users.First();
+            List<SearchDetailsForUser> searchesForUser = new List<SearchDetailsForUser>();
+            foreach (var search in db.Searches)
             {
-                Message = "חיפושי המשתמש שלא נמצאו נשלחו בהצלחה",
-                Value = SearchCast.GetSearchesDTO(db.Searches.Where(w => w.codeUser == userId && w.status == 0).ToList()),
+                if (search.codeUser == CurrentUser.codeUser && search.status == 0)
+                {
+                    searchesForUser.Add(new SearchDetailsForUser()
+                    {
+                        nameProduct = search.nameProduct,
+                        nameCategory = db.Categories.First(f => f.codeCategory == search.codeCategory).nameCategory,
+                        status = search.status
+                    });
+                }
+            }
+            return new WebResult<List<SearchDetailsForUser>>
+            {
+                Message = "חיפושי המשתמש נשלחו בהצלחה",
+                Value = searchesForUser,
                 Status = true
             };
         }
         //פונקציה שמחזירה למשתמש את כל החיפושים שנמצאו
-        public static WebResult<List<SearchDTO>> GetfoundSearchesByUserId(int userId)
+        public static WebResult<List<SearchDetailsForUser>> GetHistoryFound()
         {
-            if ((HttpContext.Current.Session["User"] as User).codeUser != userId)
-                return new WebResult<List<SearchDTO>>
-                {
-                    Message = "שגיאת אבטחה, משתמש לא תואם",
-                    Value = null,
-                    Status = false
-                };
-            return new WebResult<List<SearchDTO>>
+            User CurrentUser = db.Users.First();
+            List<SearchDetailsForUser> searchesForUser = new List<SearchDetailsForUser>();
+            foreach (var search in db.Searches)
             {
-                Message = "חיפושי המשתמש שנמצאו נשלחו בהצלחה",
-                Value = SearchCast.GetSearchesDTO(db.Searches.Where(w => w.codeUser == userId && w.status == 1).ToList()),
+                if (search.codeUser == CurrentUser.codeUser && search.status == 1)
+                {
+                    searchesForUser.Add(new SearchDetailsForUser()
+                    {
+                        nameProduct = search.nameProduct,
+                        nameCategory = db.Categories.First(f => f.codeCategory == search.codeCategory).nameCategory,
+                        status = search.status,
+                        nameShop = search.codeShop == null ? "" : db.Shops.First(f => f.codeShop == search.codeShop).nameShop
+                    });
+                }
+            }
+            return new WebResult<List<SearchDetailsForUser>>
+            {
+                Message = "חיפושי המשתמש נשלחו בהצלחה",
+                Value = searchesForUser,
                 Status = true
             };
         }
