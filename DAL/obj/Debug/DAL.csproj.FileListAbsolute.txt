@@ -400,3 +400,24 @@ C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverS
 C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\DAL\obj\Debug\DAL.dll
 C:\Users\USER\Desktop\הפרוייקט הסופי\תכלס\finalProject--serverSide\DAL\obj\Debug\DAL.pdb
+C:\Users\lenovo\Downloads\finalProject--serverSide\DAL\bin\Debug\DAL.dll.config
+C:\Users\lenovo\Downloads\finalProject--serverSide\DAL\bin\Debug\DAL.dll
+C:\Users\lenovo\Downloads\finalProject--serverSide\DAL\bin\Debug\DAL.pdb
+C:\Users\lenovo\Downloads\finalProject--serverSide\DAL\bin\Debug\EntityFramework.dll
+C:\Users\lenovo\Downloads\finalProject--serverSide\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\lenovo\Downloads\finalProject--serverSide\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\lenovo\Downloads\finalProject--serverSide\DAL\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\lenovo\Downloads\finalProject--serverSide\DAL\bin\Debug\System.Web.Cors.dll
+C:\Users\lenovo\Downloads\finalProject--serverSide\DAL\bin\Debug\System.Web.Http.Cors.dll
+C:\Users\lenovo\Downloads\finalProject--serverSide\DAL\bin\Debug\System.Web.Http.dll
+C:\Users\lenovo\Downloads\finalProject--serverSide\DAL\bin\Debug\EntityFramework.xml
+C:\Users\lenovo\Downloads\finalProject--serverSide\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\lenovo\Downloads\finalProject--serverSide\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\lenovo\Downloads\finalProject--serverSide\DAL\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\lenovo\Downloads\finalProject--serverSide\DAL\bin\Debug\System.Web.Http.xml
+C:\Users\lenovo\Downloads\finalProject--serverSide\DAL\bin\Debug\System.Web.Http.Cors.xml
+C:\Users\lenovo\Downloads\finalProject--serverSide\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\lenovo\Downloads\finalProject--serverSide\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Downloads\finalProject--serverSide\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\lenovo\Downloads\finalProject--serverSide\DAL\obj\Debug\DAL.dll
+C:\Users\lenovo\Downloads\finalProject--serverSide\DAL\obj\Debug\DAL.pdb

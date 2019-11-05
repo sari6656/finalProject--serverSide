@@ -229,7 +229,7 @@ namespace BL
                 int counter = 0;
                 foreach (var search in db.Searches)
                 {
-                    if (search.codeCategory == category.codeCategory)
+                    if (search.codeCategory == category.codeCategory && search.codeShop == shopDTO.codeShop)
                         counter++;
                 }
                 searchesForShop.numbersCategories.Add(counter);
