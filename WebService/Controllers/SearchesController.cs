@@ -51,6 +51,12 @@ namespace WebService.Controllers
         {
             return Ok(Searches.GetShopsForCategory(codeCategory));
         }
+        [Route("CheckDistance")]
+        [HttpPost]
+        public IHttpActionResult CheckDistance(UserIdWithLocation userIdWithLocation)
+        {
+            return Ok(PlacesAndLocations.CheckDistance(userIdWithLocation));
+        }
 
     }
 }
