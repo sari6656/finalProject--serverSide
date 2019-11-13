@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Entities.CategoryDTO">
+    <Position X="8.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CategoryDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.SearchDTO">
+    <Position X="3" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAQAAgAAAIAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>SearchDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.ShopDTO">
+    <Position X="4.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAQAAAAAAQAAAQAAAEAAAACAQAEEACAAAAAAAAAAA=</HashCode>
+      <FileName>ShopDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.UserDTO">
+    <Position X="6.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAEAAAAAAAAMAAAAAgIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="9" />
+</ClassDiagram>
