@@ -19,7 +19,7 @@ namespace BL
     public class Shops
     {
         public static ProjectEntities db = new ProjectEntities();
-        //הרשמה
+        //Register
         public async static Task<WebResult<LoginData<ShopDTO>>> Register(ShopDTO shopDto, Uri request)
         {
             if (db.Shops.FirstOrDefault(w => w.passwordShop == shopDto.passwordShop) != null ||
@@ -66,7 +66,7 @@ namespace BL
             };
 
         }
-        //כניסה
+        //Login
         public static async Task<WebResult<LoginData<ShopDTO>>> Login(string mail, string password, Uri requestUri)
         {
             var shop = db.Shops.Where(w => w.mailShop == mail && w.passwordShop == password).FirstOrDefault();
@@ -107,7 +107,7 @@ namespace BL
             };
 
         }
-        //עדכון חנות עם קטגוריות
+        //Update shop with categories
         public static WebResult<ShopDTO> Update(ShopDTO shopDTO)
         {
             Shop shop = db.Shops.FirstOrDefault(f => f.mailShop == shopDTO.mailShop);
@@ -167,7 +167,7 @@ namespace BL
                 Status = true
             };
         }
-        //בקשת מייל להוספת קטגוריה
+        //Send email for request category
         public static WebResult<string> SendEmailForNewCategory(string categoryName, [UserLogged] ShopDTO shopDTO)
         {
 
@@ -200,23 +200,7 @@ namespace BL
                 Value = categoryName
             };
         }
-        // ביטול רישום????????????????????????????????????????????????????????????????????
-        public static bool Delete(int code)
-        {
-            //  אסור למחוק חנות ???????????????????
-            Shop shop = db.Shops.Find(code);
-            if (shop == null)
-                return false;
-            //הרי אסור לשנות את הרשימה forEach האם 2 השורות הבאות נכונות, כי כשעושים ?????????????
-            db.Category_to_shop.Where(c => c.codeShop == code).ToList().ForEach(f => db.Category_to_shop.Remove(f));
-            //כשמבטלים גם את החיפושים שנמצאו בחנות זו, המשתמשים גם לא ימצאו יותר חיפושים אלו
-            //האם זו בעיה????????????????????????
-            db.Searches.Where(s => s.codeShop == code).ToList().ForEach(f => db.Searches.Remove(f));
-            db.Shops.Remove(shop);
-            db.SaveChanges();
-            return true;
-        }
-        //  הפונקציה מחזירה לחנות את כל החיפושים שנמצאו אצלה
+        //Returns the searches that found in that shop
         public static WebResult<SearchesForShop> getSearchesForShop([UserLogged] ShopDTO shopDTO)
         {
             SearchesForShop searchesForShop= new SearchesForShop();
@@ -243,7 +227,7 @@ namespace BL
             };
         }
 
-        //הפונקציה מחזירה את כל הקטגוריות לבחירה
+        //Returns the categories for choosing
         public static WebResult<List<CategoryDTO>> GetAllCategories()
         {
             return new WebResult<List<CategoryDTO>>
@@ -254,8 +238,7 @@ namespace BL
             };
         }
 
-
-        //יציאת משתמש
+        //Logout
         public static WebResult<string> Logout([UserLogged] ShopDTO shopDTO)
         {
             //get user data
@@ -278,7 +261,7 @@ namespace BL
                 Value = null
             };
         }
-        //הפונקציה מכניסה לטוקן את החנות
+        //Saves who is the shop now
         private static async Task<string> GetTokenDataAsync(string username, string password, Uri req)
         {
             HttpClient httpClient = new HttpClient();

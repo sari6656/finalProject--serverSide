@@ -47,6 +47,7 @@ namespace BL.Helpers
             return d;// returns the distance in meter
         }
 
+        //הפונקציה בודקת האם למיקום הזה יש למשתמש חנות קרובה עבור אחת מהקטגוריות
         public static WebResult<ShopDetailsForUsers> CheckDistance(UserIdWithLocation userIdWithLocation)
         {
             double lat = userIdWithLocation.Lat;

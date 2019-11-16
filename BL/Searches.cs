@@ -14,7 +14,7 @@ namespace BL
     public class Searches
     {
         public static ProjectEntities db = new ProjectEntities();
-        //פונקציה שמראה למשתמש את הקטגוריות כדי שיוכל לבחור
+        //Returns the categories for choosing
         public static WebResult<List<CategoryDTO>> GetCategories()
         {
             return new WebResult<List<CategoryDTO>>
@@ -24,7 +24,7 @@ namespace BL
                 Value = CategoryCast.GetCategoriesDTO(db.Categories.ToList())
             };
         }
-        //יצירה
+        //Create search
         public static WebResult<SearchDTO> Create(SearchDTO searchDTO)
         {
             //אילו בדיקות בודקים??????????????????????
@@ -46,8 +46,7 @@ namespace BL
                 Value = searchDTO
             };
         }
-        //מחיקת חיפוש- המשתמש התחרט
-        //החיפוש לא באמת מתבטל אלא הסטטוס משתנה ל2
+        //Delete search- status changes to 2
         public static WebResult<SearchDTO> Delete(int code)
         {
             Search search = db.Searches.Find(code);
@@ -74,7 +73,7 @@ namespace BL
                 Value = SearchCast.GetSearchDTO(search)
             };
         }
-        //חיפוש נמצא- אם המשתמש קנה את המוצר
+        //Search is found- user bought the product
         public static WebResult<SearchDTO> Found(int codeSearch, int codeShop)
         {
             Search search = db.Searches.Find(codeSearch);
@@ -95,11 +94,10 @@ namespace BL
                 Value = SearchCast.GetSearchDTO(search)
             };
         }
-        //פונקציה שמחזירה למשתמש את כל החיפושים שלו כולל אלו שמצא
-        public static WebResult<List<SearchDetailsForUser>> GetHistory()
+        //Returns history of the searches, even thouse the user found
+        public static WebResult<List<SearchDetailsForUser>> GetHistory(string uuid)
         {
-           //איך יודעים מי המשתמש
-            User CurrentUser = db.Users.First();
+            User CurrentUser = db.Users.FirstOrDefault(f=>f.passwordUser == uuid);
             List<SearchDetailsForUser> searchesForUser = new List<SearchDetailsForUser>();
             foreach (var search in db.Searches)
             {
@@ -121,10 +119,10 @@ namespace BL
                 Status = true
             };
         }
-        //פונקציה שמחזירה למשתמש את כל החיפושים שעדיין לא נמצאו
-        public static WebResult<List<SearchDetailsForUser>> GetHistoryNotFound()
+        //Returns user searches that have not yet been found
+        public static WebResult<List<SearchDetailsForUser>> GetHistoryNotFound(string uuid)
         {
-            User CurrentUser = db.Users.First();
+            User CurrentUser = db.Users.FirstOrDefault(f=>f.passwordUser == uuid);
             List<SearchDetailsForUser> searchesForUser = new List<SearchDetailsForUser>();
             foreach (var search in db.Searches)
             {
@@ -145,10 +143,10 @@ namespace BL
                 Status = true
             };
         }
-        //פונקציה שמחזירה למשתמש את כל החיפושים שנמצאו
-        public static WebResult<List<SearchDetailsForUser>> GetHistoryFound()
+        //Returns user searches that have been found
+        public static WebResult<List<SearchDetailsForUser>> GetHistoryFound(string uuid)
         {
-            User CurrentUser = db.Users.First();
+            User CurrentUser = db.Users.FirstOrDefault(f=>f.passwordUser == uuid);
             List<SearchDetailsForUser> searchesForUser = new List<SearchDetailsForUser>();
             foreach (var search in db.Searches)
             {
@@ -170,7 +168,7 @@ namespace BL
                 Status = true
             };
         }
-        //מחזירה את כל החנויות שמוכרות קטגוריה מסוימת
+        //Returns all stores that sell a particular category
         public static WebResult<List<ShopDetailsForUsers>> GetShopsForCategory(int codeCategory)
         {
             List<int> codeShops = new List<int>();
@@ -205,7 +203,6 @@ namespace BL
                 Value = shopsToCategory
             };
         }
-
 
     }
 }
