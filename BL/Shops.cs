@@ -61,7 +61,7 @@ namespace BL
             return new WebResult<LoginData<ShopDTO>>
             {
                 Status = false,
-                Message = "אין משתמש רשום בשם וסיסמא זו",
+                Message = "ההרשמה נכשלה",
                 Value = null
             };
 

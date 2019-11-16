@@ -29,7 +29,6 @@ namespace BL
                 };
             db.Users.Add(goodUser);
             db.SaveChanges();
-            HttpContext.Current.Session["User"] = user;
             return new WebResult<UserDTO>
             {
                 Message = "הנתונים נשמרו בהצלחה",

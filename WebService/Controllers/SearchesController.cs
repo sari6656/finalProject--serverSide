@@ -1,6 +1,7 @@
 ﻿using BL;
 using BL.Helpers;
 using Entities;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,28 +24,29 @@ namespace WebService.Controllers
         }
         [Route("RunSearch")]
         [HttpPost]
-        public IHttpActionResult RunSearch(SearchDTO searchDTO)
+        public IHttpActionResult RunSearch([FromBody] JObject data)
         {
-            return Ok(Searches.Create(searchDTO));
+            SearchDTO searchDTO = data["search"].ToObject<SearchDTO>();
+            string passwordUser = data["passwordUser"].ToObject<string>();
+            return Ok(Searches.Create(searchDTO,passwordUser));
         }
         [Route("GetHistory")]
-        [HttpGet]
-        public IHttpActionResult GetHistory()
+        [HttpPost]
+        public IHttpActionResult GetHistory([FromBody]string passwordUser)
         {
-            string uuid = "456";
-            return Ok(Searches.GetHistory(uuid));
+            return Ok(Searches.GetHistory(passwordUser));
         }
         [Route("GetHistoryFound")]
         [HttpPost]
-        public IHttpActionResult GetHistoryFound(string uuid)
+        public IHttpActionResult GetHistoryFound([FromBody]string passwordUser)
         {
-            return Ok(Searches.GetHistoryFound(uuid));
+            return Ok(Searches.GetHistoryFound(passwordUser));
         }
         [Route("GetHistoryNotFound")]
         [HttpPost]
-        public IHttpActionResult GetHistoryNotFound(string uuid)
+        public IHttpActionResult GetHistoryNotFound([FromBody]string passwordUser)
         {
-            return Ok(Searches.GetHistoryNotFound(uuid));
+            return Ok(Searches.GetHistoryNotFound(passwordUser));
         }
         [Route("GetShopsForCategory")]
         [HttpGet]

@@ -25,26 +25,31 @@ namespace BL
             };
         }
         //Create search
-        public static WebResult<SearchDTO> Create(SearchDTO searchDTO)
+        public static WebResult<SearchDTO> Create(SearchDTO searchDTO, string passwordUser)
         {
-            //אילו בדיקות בודקים??????????????????????
-            //Has found תמיד צריך להגיע false
-            if (HttpContext.Current.Session["User"] == null)
+            try
+            {
+                searchDTO.codeUser = db.Users.FirstOrDefault(f => f.passwordUser == passwordUser).codeUser;
+                db.Searches.Add(SearchCast.GetSearch(searchDTO));
+                db.SaveChanges();
                 return new WebResult<SearchDTO>
                 {
-                    Message = "לא נמצא משתמש פעיל",
+                    Message = "יצירת חיפוש בוצעה בהצלחה",
+                    Status = true,
+                    Value = searchDTO
+                };
+            }
+            catch (Exception e)
+            {
+                return new WebResult<SearchDTO>()
+                {
+                    Message = e.Message,
                     Status = false,
                     Value = null
                 };
-            searchDTO.codeUser = (HttpContext.Current.Session["User"] as User).codeUser;
-            db.Searches.Add(SearchCast.GetSearch(searchDTO));
-            db.SaveChanges();
-            return new WebResult<SearchDTO>
-            {
-                Message = "יצירת חיפוש בוצעה בהצלחה",
-                Status = true,
-                Value = searchDTO
-            };
+            }
+
+            
         }
         //Delete search- status changes to 2
         public static WebResult<SearchDTO> Delete(int code)
@@ -95,9 +100,10 @@ namespace BL
             };
         }
         //Returns history of the searches, even thouse the user found
-        public static WebResult<List<SearchDetailsForUser>> GetHistory(string uuid)
+        public static WebResult<List<SearchDetailsForUser>> GetHistory(string passwordUser)
         {
-            User CurrentUser = db.Users.FirstOrDefault(f=>f.passwordUser == uuid);
+            string pass = passwordUser;
+            User CurrentUser = db.Users.FirstOrDefault(f=>f.passwordUser == pass);
             List<SearchDetailsForUser> searchesForUser = new List<SearchDetailsForUser>();
             foreach (var search in db.Searches)
             {
@@ -120,9 +126,9 @@ namespace BL
             };
         }
         //Returns user searches that have not yet been found
-        public static WebResult<List<SearchDetailsForUser>> GetHistoryNotFound(string uuid)
+        public static WebResult<List<SearchDetailsForUser>> GetHistoryNotFound(string passwordUser)
         {
-            User CurrentUser = db.Users.FirstOrDefault(f=>f.passwordUser == uuid);
+            User CurrentUser = db.Users.FirstOrDefault(f=>f.passwordUser == passwordUser);
             List<SearchDetailsForUser> searchesForUser = new List<SearchDetailsForUser>();
             foreach (var search in db.Searches)
             {
@@ -144,9 +150,9 @@ namespace BL
             };
         }
         //Returns user searches that have been found
-        public static WebResult<List<SearchDetailsForUser>> GetHistoryFound(string uuid)
+        public static WebResult<List<SearchDetailsForUser>> GetHistoryFound(string passwordUser)
         {
-            User CurrentUser = db.Users.FirstOrDefault(f=>f.passwordUser == uuid);
+            User CurrentUser = db.Users.FirstOrDefault(f=>f.passwordUser == passwordUser);
             List<SearchDetailsForUser> searchesForUser = new List<SearchDetailsForUser>();
             foreach (var search in db.Searches)
             {
