@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BL.Searches">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAQAAAAACAAAQAAAQlAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Searches.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BL.Shops">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQAAAAAAAAQAAAAABAAAAIAAAEBAAAAAAAQAAAEgAA=</HashCode>
+      <FileName>Shops.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BL.Users">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQQAAAAAAAQEAAAAAAAAAAAAAEBAAAAAAAQAAAEAAA=</HashCode>
+      <FileName>Users.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BL.Helpers.WebResult&lt;T&gt;">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAgIAAAAAA=</HashCode>
+      <FileName>Helpers\WebResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BL.Helpers.UserIdWithLocation">
+    <Position X="4" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAACAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\UserIdWithLocation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BL.Helpers.ShopDetailsForUsers">
+    <Position X="9.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAFAAAAAAAAAIBAAAAAIAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Helpers\ShopDetailsForUsers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BL.Helpers.SearchesForShop">
+    <Position X="7.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\SearchesForShop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BL.Helpers.SearchDetailsForUser">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAgAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\SearchDetailsForUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BL.Helpers.PlacesAndLocations">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAiIAAAQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\PlacesAndLocations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BL.Helpers.LoginData&lt;T&gt;">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\LoginData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BL.Helpers.UserLoggedAttribute">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\LoggedUserAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BL.Helpers.UserLoggedParameterBinding">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\LoggedUserAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="9" />
+</ClassDiagram>
