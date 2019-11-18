@@ -14,7 +14,7 @@ namespace BL
     public class Searches
     {
         public static ProjectEntities db = new ProjectEntities();
-        //פונקציה שמראה למשתמש את הקטגוריות כדי שיוכל לבחור
+        //Returns the categories for choosing
         public static WebResult<List<CategoryDTO>> GetCategories()
         {
             return new WebResult<List<CategoryDTO>>
@@ -24,30 +24,34 @@ namespace BL
                 Value = CategoryCast.GetCategoriesDTO(db.Categories.ToList())
             };
         }
-        //יצירה
-        public static WebResult<SearchDTO> Create(SearchDTO searchDTO)
+        //Create search
+        public static WebResult<SearchDTO> Create(SearchDTO searchDTO, string passwordUser)
         {
-            //אילו בדיקות בודקים??????????????????????
-            //Has found תמיד צריך להגיע false
-            if (HttpContext.Current.Session["User"] == null)
+            try
+            {
+                searchDTO.codeUser = db.Users.FirstOrDefault(f => f.passwordUser == passwordUser).codeUser;
+                db.Searches.Add(SearchCast.GetSearch(searchDTO));
+                db.SaveChanges();
                 return new WebResult<SearchDTO>
                 {
-                    Message = "לא נמצא משתמש פעיל",
+                    Message = "יצירת חיפוש בוצעה בהצלחה",
+                    Status = true,
+                    Value = searchDTO
+                };
+            }
+            catch (Exception e)
+            {
+                return new WebResult<SearchDTO>()
+                {
+                    Message = e.Message,
                     Status = false,
                     Value = null
                 };
-            searchDTO.codeUser = (HttpContext.Current.Session["User"] as User).codeUser;
-            db.Searches.Add(SearchCast.GetSearch(searchDTO));
-            db.SaveChanges();
-            return new WebResult<SearchDTO>
-            {
-                Message = "יצירת חיפוש בוצעה בהצלחה",
-                Status = true,
-                Value = searchDTO
-            };
+            }
+
+
         }
-        //מחיקת חיפוש- המשתמש התחרט
-        //החיפוש לא באמת מתבטל אלא הסטטוס משתנה ל2
+        //Delete search- status changes to 2
         public static WebResult<SearchDTO> Delete(int code)
         {
             Search search = db.Searches.Find(code);
@@ -55,13 +59,6 @@ namespace BL
                 return new WebResult<SearchDTO>
                 {
                     Message = "לא נמצא חיפוש זה",
-                    Status = false,
-                    Value = null
-                };
-            if (search.status == 1)
-                return new WebResult<SearchDTO>
-                {
-                    Message = "אין אפשרות למחו חיפושים שכבר נמצאו",
                     Status = false,
                     Value = null
                 };
@@ -74,7 +71,7 @@ namespace BL
                 Value = SearchCast.GetSearchDTO(search)
             };
         }
-        //חיפוש נמצא- אם המשתמש קנה את המוצר
+        //Search is found- user bought the product
         public static WebResult<SearchDTO> Found(int codeSearch, int codeShop)
         {
             Search search = db.Searches.Find(codeSearch);
@@ -95,67 +92,19 @@ namespace BL
                 Value = SearchCast.GetSearchDTO(search)
             };
         }
-        //פונקציה שמחזירה למשתמש את כל החיפושים שלו כולל אלו שמצא
-        public static WebResult<List<SearchDetailsForUser>> GetHistory()
+        //Returns history of the searches, even thouse the user found
+        public static WebResult<List<SearchDetailsForUser>> GetHistory(string passwordUser)
         {
-           //איך יודעים מי המשתמש
-            User CurrentUser = db.Users.First();
+            string pass = passwordUser;
+            User CurrentUser = db.Users.FirstOrDefault(f => f.passwordUser == pass);
             List<SearchDetailsForUser> searchesForUser = new List<SearchDetailsForUser>();
             foreach (var search in db.Searches)
             {
-                if(search.codeUser == CurrentUser.codeUser && search.status != 2)
+                if (search.codeUser == CurrentUser.codeUser && search.status != 2)
                 {
                     searchesForUser.Add(new SearchDetailsForUser()
                     {
-                        nameProduct = search.nameProduct,
-                        nameCategory = db.Categories.First(f=>f.codeCategory==search.codeCategory).nameCategory,
-                        status = search.status,
-                        nameShop = search.codeShop == null?"":db.Shops.First(f=>f.codeShop == search.codeShop).nameShop
-                    });
-                }
-            }
-            return new WebResult<List<SearchDetailsForUser>>
-            {
-                Message = "חיפושי המשתמש נשלחו בהצלחה",
-                Value = searchesForUser,
-                Status = true
-            };
-        }
-        //פונקציה שמחזירה למשתמש את כל החיפושים שעדיין לא נמצאו
-        public static WebResult<List<SearchDetailsForUser>> GetHistoryNotFound()
-        {
-            User CurrentUser = db.Users.First();
-            List<SearchDetailsForUser> searchesForUser = new List<SearchDetailsForUser>();
-            foreach (var search in db.Searches)
-            {
-                if (search.codeUser == CurrentUser.codeUser && search.status == 0)
-                {
-                    searchesForUser.Add(new SearchDetailsForUser()
-                    {
-                        nameProduct = search.nameProduct,
-                        nameCategory = db.Categories.First(f => f.codeCategory == search.codeCategory).nameCategory,
-                        status = search.status
-                    });
-                }
-            }
-            return new WebResult<List<SearchDetailsForUser>>
-            {
-                Message = "חיפושי המשתמש נשלחו בהצלחה",
-                Value = searchesForUser,
-                Status = true
-            };
-        }
-        //פונקציה שמחזירה למשתמש את כל החיפושים שנמצאו
-        public static WebResult<List<SearchDetailsForUser>> GetHistoryFound()
-        {
-            User CurrentUser = db.Users.First();
-            List<SearchDetailsForUser> searchesForUser = new List<SearchDetailsForUser>();
-            foreach (var search in db.Searches)
-            {
-                if (search.codeUser == CurrentUser.codeUser && search.status == 1)
-                {
-                    searchesForUser.Add(new SearchDetailsForUser()
-                    {
+                        codeSearch = search.codeSearch,
                         nameProduct = search.nameProduct,
                         nameCategory = db.Categories.First(f => f.codeCategory == search.codeCategory).nameCategory,
                         status = search.status,
@@ -170,7 +119,58 @@ namespace BL
                 Status = true
             };
         }
-        //מחזירה את כל החנויות שמוכרות קטגוריה מסוימת
+        //Returns user searches that have not yet been found
+        public static WebResult<List<SearchDetailsForUser>> GetHistoryNotFound(string passwordUser)
+        {
+            User CurrentUser = db.Users.FirstOrDefault(f => f.passwordUser == passwordUser);
+            List<SearchDetailsForUser> searchesForUser = new List<SearchDetailsForUser>();
+            foreach (var search in db.Searches)
+            {
+                if (search.codeUser == CurrentUser.codeUser && search.status == 0)
+                {
+                    searchesForUser.Add(new SearchDetailsForUser()
+                    {
+                        codeSearch = search.codeSearch,
+                        nameProduct = search.nameProduct,
+                        nameCategory = db.Categories.First(f => f.codeCategory == search.codeCategory).nameCategory,
+                        status = search.status
+                    });
+                }
+            }
+            return new WebResult<List<SearchDetailsForUser>>
+            {
+                Message = "חיפושי המשתמש נשלחו בהצלחה",
+                Value = searchesForUser,
+                Status = true
+            };
+        }
+        //Returns user searches that have been found
+        public static WebResult<List<SearchDetailsForUser>> GetHistoryFound(string passwordUser)
+        {
+            User CurrentUser = db.Users.FirstOrDefault(f => f.passwordUser == passwordUser);
+            List<SearchDetailsForUser> searchesForUser = new List<SearchDetailsForUser>();
+            foreach (var search in db.Searches)
+            {
+                if (search.codeUser == CurrentUser.codeUser && search.status == 1)
+                {
+                    searchesForUser.Add(new SearchDetailsForUser()
+                    {
+                        codeSearch = search.codeSearch,
+                        nameProduct = search.nameProduct,
+                        nameCategory = db.Categories.First(f => f.codeCategory == search.codeCategory).nameCategory,
+                        status = search.status,
+                        nameShop = search.codeShop == null ? "" : db.Shops.First(f => f.codeShop == search.codeShop).nameShop
+                    });
+                }
+            }
+            return new WebResult<List<SearchDetailsForUser>>
+            {
+                Message = "חיפושי המשתמש נשלחו בהצלחה",
+                Value = searchesForUser,
+                Status = true
+            };
+        }
+        //Returns all stores that sell a particular category
         public static WebResult<List<ShopDetailsForUsers>> GetShopsForCategory(int codeCategory)
         {
             List<int> codeShops = new List<int>();
@@ -205,7 +205,6 @@ namespace BL
                 Value = shopsToCategory
             };
         }
-
 
     }
 }

@@ -8,6 +8,7 @@ namespace BL.Helpers
 {
     public class SearchDetailsForUser
     {
+        public int codeSearch { get; set; }
         public string nameProduct { get; set; }
         public string nameCategory { get; set; }
         public int status { get; set; }

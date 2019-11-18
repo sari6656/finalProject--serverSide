@@ -1,6 +1,7 @@
 ﻿using BL;
 using BL.Helpers;
 using Entities;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,27 +24,29 @@ namespace WebService.Controllers
         }
         [Route("RunSearch")]
         [HttpPost]
-        public IHttpActionResult RunSearch(SearchDTO searchDTO)
+        public IHttpActionResult RunSearch([FromBody] JObject data)
         {
-            return Ok(Searches.Create(searchDTO));
+            SearchDTO searchDTO = data["search"].ToObject<SearchDTO>();
+            string passwordUser = data["passwordUser"].ToObject<string>();
+            return Ok(Searches.Create(searchDTO, passwordUser));
         }
         [Route("GetHistory")]
-        [HttpGet]
-        public IHttpActionResult GetHistory()
+        [HttpPost]
+        public IHttpActionResult GetHistory([FromBody]string passwordUser)
         {
-            return Ok(Searches.GetHistory());
+            return Ok(Searches.GetHistory(passwordUser));
         }
         [Route("GetHistoryFound")]
-        [HttpGet]
-        public IHttpActionResult GetHistoryFound()
+        [HttpPost]
+        public IHttpActionResult GetHistoryFound([FromBody]string passwordUser)
         {
-            return Ok(Searches.GetHistoryFound());
+            return Ok(Searches.GetHistoryFound(passwordUser));
         }
         [Route("GetHistoryNotFound")]
-        [HttpGet]
-        public IHttpActionResult GetHistoryNotFound()
+        [HttpPost]
+        public IHttpActionResult GetHistoryNotFound([FromBody]string passwordUser)
         {
-            return Ok(Searches.GetHistoryNotFound());
+            return Ok(Searches.GetHistoryNotFound(passwordUser));
         }
         [Route("GetShopsForCategory")]
         [HttpGet]
@@ -56,6 +59,12 @@ namespace WebService.Controllers
         public IHttpActionResult CheckDistance(UserIdWithLocation userIdWithLocation)
         {
             return Ok(PlacesAndLocations.CheckDistance(userIdWithLocation));
+        }
+        [Route("Delete")]
+        [HttpGet]
+        public IHttpActionResult Delete(int codeSearch)
+        {
+            return Ok(BL.Searches.Delete(codeSearch));
         }
 
     }

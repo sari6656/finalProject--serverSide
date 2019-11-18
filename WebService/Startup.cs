@@ -5,6 +5,7 @@ using Newtonsoft.Json;
 using Owin;
 using System;
 using System.Collections.Generic;
+using System.Net.Http.Headers;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
@@ -34,7 +35,10 @@ namespace WebService
             app.UseOAuthBearerAuthentication(new OAuthBearerAuthenticationOptions());
 
 
+            
+
             HttpConfiguration config = new HttpConfiguration();
+            config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/plain"));
             WebApiConfig.Register(config);
         }
     }
