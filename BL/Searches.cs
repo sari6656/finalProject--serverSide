@@ -8,6 +8,9 @@ using DAL;
 using BL.Casting;
 using BL.Helpers;
 using System.Web;
+using System.Data.Entity.Infrastructure;
+using System.Data.Entity;
+using System.Data.Entity.Core.Objects;
 
 namespace BL
 {
@@ -72,7 +75,7 @@ namespace BL
             };
         }
         //Search is found- user bought the product
-        public static WebResult<SearchDTO> Found(int codeSearch, int codeShop)
+        public static WebResult<SearchDTO> Found(int codeSearch, string mailShop)
         {
             Search search = db.Searches.Find(codeSearch);
             if (search == null)
@@ -83,8 +86,9 @@ namespace BL
                     Value = null
                 };
             search.status = 1;
-            search.codeShop = codeShop;
+            search.codeShop = db.Shops.FirstOrDefault(f => f.mailShop == mailShop).codeShop;
             db.SaveChanges();
+           
             return new WebResult<SearchDTO>
             {
                 Message = "החיפוש נמצא בהצלחה",

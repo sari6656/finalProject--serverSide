@@ -13,20 +13,23 @@ namespace BL.Helpers
 {
     public class PlacesAndLocations
     {
-        static ProjectEntities db = new ProjectEntities();
+       
         //הגרלת מיקום משתמש
         public static ShopDetailsForUsers GetRandomLocation()
         {
-            int count = db.Shops.Count();
-            Random random = new Random();
-            int r = random.Next() % count;
-            Shop shop = db.Shops.ToList()[r];
-            return new ShopDetailsForUsers()
+            using (ProjectEntities db = new ProjectEntities())
             {
-                AddressString = shop.addressString,
-                Latitude = shop.latitude,
-                Longitude = shop.longitude
-            };
+                int count = db.Shops.Count();
+                Random random = new Random();
+                int r = random.Next() % count;
+                Shop shop = db.Shops.ToList()[r];
+                return new ShopDetailsForUsers()
+                {
+                    AddressString = shop.addressString,
+                    Latitude = shop.latitude,
+                    Longitude = shop.longitude
+                };
+            }           
         }
         //פונקציית עזר לפונקציה המחזירה מרחק
         private static double rad(double x)
@@ -48,51 +51,56 @@ namespace BL.Helpers
         }
 
         //הפונקציה בודקת האם למיקום הזה יש למשתמש חנות קרובה עבור אחת מהקטגוריות
-        public static WebResult<ShopDetailsForUsers> CheckDistance(UserIdWithLocation userIdWithLocation)
+        public static WebResult<SearchInShop> CheckDistance(UserIdWithLocation userIdWithLocation)
         {
-            double lat = userIdWithLocation.Lat;
-            double lng = userIdWithLocation.Lng;
-            var codeUser = db.Users.First(f => f.passwordUser == userIdWithLocation.Uuid).codeUser;
-            foreach (var search in db.Searches)
+            using ( ProjectEntities db = new ProjectEntities())
             {
-                //only if the search is from this user and its status is 0, to find
-                if (search.codeUser == codeUser && search.status == 0)
+                double lat = userIdWithLocation.Lat;
+                double lng = userIdWithLocation.Lng;
+                var codeUser = db.Users.First(f => f.passwordUser == userIdWithLocation.Uuid).codeUser;
+                foreach (var search in db.Searches)
                 {
-                    foreach (var shop in db.Shops)
+                    //only if the search is from this user and its status is 0, to find
+                    if (search.codeUser == codeUser && search.status == 0)
                     {
-                        //if distance is less than 1000 meter
-                        if (getDistance(lat, lng, shop.latitude, shop.longitude) < 1000)
+                        foreach (var shop in db.Shops)
                         {
-                            //if there is the category that the user search in that shop
-                            if (Casting.ShopCast.GetShopDTO(shop).Categories.FirstOrDefault(f => f.codeCategory == search.codeCategory) != null)
+                            //if distance is less than 1000 meter
+                            if (getDistance(lat, lng, shop.latitude, shop.longitude) < 1000)
                             {
-                                return new WebResult<ShopDetailsForUsers>()
+                                //if there is the category that the user search in that shop
+                                if (Casting.ShopCast.GetShopDTO(shop).Categories.FirstOrDefault(f => f.codeCategory == search.codeCategory) != null)
                                 {
-                                    Status = true,
-                                    Message = "found shop",
-                                    Value = new ShopDetailsForUsers()
+                                    return new WebResult<SearchInShop>()
                                     {
-                                        AddressString = shop.addressString,
-                                        NameShop = shop.nameShop,
-                                        PhoneShop = shop.phoneShop,
-                                        FromHour = shop.fromHour,
-                                        ToHour = shop.toHour,
-                                        Latitude = shop.latitude,
-                                        Longitude = shop.longitude
-                                    }
-                                };
-                            }
+                                        Status = true,
+                                        Message = "found shop",
+                                        Value = new SearchInShop()
+                                        {
+                                            CodeSearch = search.codeSearch,
+                                            NameProduct = search.nameProduct,
+                                            AddressString = shop.addressString,
+                                            NameShop = shop.nameShop,
+                                            PhoneShop = shop.phoneShop,
+                                            MailShop = shop.mailShop,
+                                            FromHour = shop.fromHour,
+                                            ToHour = shop.toHour
+                                        }
+                                    };
+                                }
 
+                            }
                         }
                     }
                 }
+                return new WebResult<SearchInShop>()
+                {
+                    Status = false,
+                    Message = "not found close shop",
+                    Value = null
+                };
             }
-            return new WebResult<ShopDetailsForUsers>()
-            {
-                Status = false,
-                Message = "not found close shop",
-                Value = null
-            };
+           
         }
 
         //פונקציה זו, כל 6 שניות מדפיסה את התאריך

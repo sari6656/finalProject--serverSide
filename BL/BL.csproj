@@ -76,6 +76,7 @@
     <Compile Include="Helpers\PlacesAndLocations.cs" />
     <Compile Include="Helpers\SearchDetailsForUser.cs" />
     <Compile Include="Helpers\SearchesForShop.cs" />
+    <Compile Include="Helpers\SearchInShop.cs" />
     <Compile Include="Helpers\ShopDetailsForUsers.cs" />
     <Compile Include="Helpers\UserIdWithLocation.cs" />
     <Compile Include="Helpers\WebResult.cs" />

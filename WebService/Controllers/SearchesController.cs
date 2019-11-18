@@ -66,6 +66,14 @@ namespace WebService.Controllers
         {
             return Ok(BL.Searches.Delete(codeSearch));
         }
+        [Route("Found")]
+        [HttpPost]
+        public IHttpActionResult Found([FromBody] JObject data)
+        {
+            int codeSearch = data["codeSearch"].ToObject<int>();
+            string mailShop = data["mailShop"].ToObject<string>();
+            return Ok(BL.Searches.Found(codeSearch,mailShop));
+        }
 
     }
 }
