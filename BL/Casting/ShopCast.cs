@@ -11,7 +11,7 @@ namespace BL.Casting
 {
     class ShopCast
     {
-        public static ProjectEntities db = new ProjectEntities();
+       
         //Convert from shop to shopDTO
         public static ShopDTO GetShopDTO(Shop shop)
         {

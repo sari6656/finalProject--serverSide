@@ -13,7 +13,7 @@ namespace BL.Helpers
 {
     public class PlacesAndLocations
     {
-       
+
         //הגרלת מיקום משתמש
         public static ShopDetailsForUsers GetRandomLocation()
         {
@@ -29,7 +29,7 @@ namespace BL.Helpers
                     Latitude = shop.latitude,
                     Longitude = shop.longitude
                 };
-            }           
+            }
         }
         //פונקציית עזר לפונקציה המחזירה מרחק
         private static double rad(double x)
@@ -53,7 +53,7 @@ namespace BL.Helpers
         //הפונקציה בודקת האם למיקום הזה יש למשתמש חנות קרובה עבור אחת מהקטגוריות
         public static WebResult<SearchInShop> CheckDistance(UserIdWithLocation userIdWithLocation)
         {
-            using ( ProjectEntities db = new ProjectEntities())
+            using (ProjectEntities db = new ProjectEntities())
             {
                 double lat = userIdWithLocation.Lat;
                 double lng = userIdWithLocation.Lng;
@@ -100,20 +100,7 @@ namespace BL.Helpers
                     Value = null
                 };
             }
-           
+
         }
-
-        //פונקציה זו, כל 6 שניות מדפיסה את התאריך
-        //public static void Timer()
-        //{
-
-        //    var startTimeSpan = TimeSpan.Zero;
-        //    var periodTimeSpan = TimeSpan.FromMinutes(0.1);
-
-        //    var timer = new System.Threading.Timer((e) =>
-        //    {   
-        //        Console.Write(DateTime.Now);
-        //    }, null, startTimeSpan, periodTimeSpan);
-        //}
     }
 }
