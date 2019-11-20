@@ -29,7 +29,6 @@ namespace DAL
         public virtual DbSet<Category_to_shop> Category_to_shop { get; set; }
         public virtual DbSet<Search> Searches { get; set; }
         public virtual DbSet<Shop> Shops { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<User> Users { get; set; }
     }
 }

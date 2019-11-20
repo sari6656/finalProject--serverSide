@@ -20,9 +20,6 @@ namespace DAL
         public int codeCategory { get; set; }
         public int status { get; set; }
         public Nullable<int> codeShop { get; set; }
-    
-        public virtual Category Category { get; set; }
-        public virtual User User { get; set; }
-        public virtual Shop Shop { get; set; }
+        public Nullable<int> distance { get; set; }
     }
 }

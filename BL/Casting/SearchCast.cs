@@ -17,9 +17,10 @@ namespace BL.Casting
                 codeSearch = search.codeSearch,
                 codeUser = search.codeUser,
                 nameProduct = search.nameProduct,
-                codeCategory=search.codeCategory,
-               status = search.status,
-                codeShop=search.codeShop
+                codeCategory = search.codeCategory,
+                status = search.status,
+                codeShop = search.codeShop,
+                distance = search.distance
             };
         }
         public static Search GetSearch(SearchDTO search)
@@ -29,9 +30,10 @@ namespace BL.Casting
                 codeSearch = search.codeSearch,
                 codeUser = search.codeUser,
                 nameProduct = search.nameProduct,
-                codeCategory=search.codeCategory,
+                codeCategory = search.codeCategory,
                 status = search.status,
-                codeShop=search.codeShop
+                codeShop = search.codeShop,
+                distance = search.distance
             };
         }
         //המרת רשימה שלמה
@@ -47,7 +49,8 @@ namespace BL.Casting
                     nameProduct = item.nameProduct,
                     codeCategory = item.codeCategory,
                     status = item.status,
-                    codeShop = item.codeShop
+                    codeShop = item.codeShop,
+                    distance = item.distance
                 });
             }
             return searchDTOs;

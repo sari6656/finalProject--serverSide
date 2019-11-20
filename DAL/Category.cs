@@ -18,7 +18,6 @@ namespace DAL
         public Category()
         {
             this.Category_to_shop = new HashSet<Category_to_shop>();
-            this.Searches = new HashSet<Search>();
         }
     
         public int codeCategory { get; set; }
@@ -26,7 +25,5 @@ namespace DAL
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Category_to_shop> Category_to_shop { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Search> Searches { get; set; }
     }
 }
