@@ -14,5 +14,6 @@ namespace Entities
         public int status { get; set; }
         public int? codeShop { get; set; }
         public int codeCategory { get; set; }
+        public int? distance { get; set; }
     }
 }

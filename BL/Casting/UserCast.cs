@@ -10,17 +10,16 @@ namespace BL.Casting
 {
     public class UserCast
     {
-        public static ProjectEntities db = new ProjectEntities();
         public static UserDTO GetUserDTO(User user)
         {
-            
+
             return new UserDTO()
             {
                 codeUser = user.codeUser,
                 nameUser = user.nameUser,
                 phoneUser = user.phoneUser,
                 mailUser = user.mailUser,
-                passwordUser=user.passwordUser
+                passwordUser = user.passwordUser
             };
         }
         public static User GetUser(UserDTO user)
@@ -31,7 +30,7 @@ namespace BL.Casting
                 nameUser = user.nameUser,
                 phoneUser = user.phoneUser,
                 mailUser = user.mailUser,
-                passwordUser=user.passwordUser
+                passwordUser = user.passwordUser
             };
         }
         //המרת רשימה שלמה
@@ -46,7 +45,7 @@ namespace BL.Casting
                     nameUser = item.nameUser,
                     phoneUser = item.phoneUser,
                     mailUser = item.mailUser,
-                    passwordUser=item.passwordUser
+                    passwordUser = item.passwordUser
                 });
             }
             return userDTOs;

@@ -13,7 +13,7 @@ namespace BL.Helpers
 {
     public class PlacesAndLocations
     {
-       
+
         //הגרלת מיקום משתמש
         public static ShopDetailsForUsers GetRandomLocation()
         {
@@ -29,7 +29,7 @@ namespace BL.Helpers
                     Latitude = shop.latitude,
                     Longitude = shop.longitude
                 };
-            }           
+            }
         }
         //פונקציית עזר לפונקציה המחזירה מרחק
         private static double rad(double x)
@@ -53,7 +53,7 @@ namespace BL.Helpers
         //הפונקציה בודקת האם למיקום הזה יש למשתמש חנות קרובה עבור אחת מהקטגוריות
         public static WebResult<List<SearchInShop>> CheckDistance(UserIdWithLocation userIdWithLocation)
         {
-            using ( ProjectEntities db = new ProjectEntities())
+            using (ProjectEntities db = new ProjectEntities())
             {
                 List<SearchInShop> searchesFound = new List<SearchInShop>();
                 double lat = userIdWithLocation.Lat;
@@ -67,17 +67,21 @@ namespace BL.Helpers
                         foreach (var shop in db.Shops)
                         {
                             //if distance is less than 1000 meter
-                            if (getDistance(lat, lng, shop.latitude, shop.longitude) < 1000)
+                            if (getDistance(lat, lng, shop.latitude, shop.longitude) < search.distance)
                             {
                                 //if there is the category that the user search in that shop
-                                
+
                                 if (Casting.ShopCast.GetShopDTO(shop).Categories.FirstOrDefault(f => f.codeCategory == search.codeCategory) != null)
                                 {
-                                    //if the shop is opened
-                                    TimeSpan fromHour = TimeSpan.Parse(shop.fromHour);
-                                    TimeSpan toHour = TimeSpan.Parse(shop.toHour);
+                                    TimeSpan fromHour = TimeSpan.MinValue, toHour = TimeSpan.MaxValue;
                                     TimeSpan now = DateTime.Now.TimeOfDay;
-                                    if(fromHour < now && toHour > now)
+                                    //if shop is opened
+                                    if (shop.fromHour != null && shop.toHour != null)
+                                    {
+                                        fromHour = TimeSpan.Parse(shop.fromHour);
+                                        toHour = TimeSpan.Parse(shop.toHour);                               
+                                    }
+                                    if (fromHour < now && toHour > now)
                                     {
                                         searchesFound.Add(new SearchInShop()
                                         {
@@ -90,7 +94,9 @@ namespace BL.Helpers
                                             FromHour = shop.fromHour,
                                             ToHour = shop.toHour
                                         });
-                                    } 
+                                    }
+
+
                                 }
 
                             }
@@ -99,25 +105,12 @@ namespace BL.Helpers
                 }
                 return new WebResult<List<SearchInShop>>()
                 {
-                    Status = false,
-                    Message = "not found close shop",
+                    Status = true,
+                    Message = "return searches found",
                     Value = searchesFound
                 };
             }
-           
+
         }
-
-        //פונקציה זו, כל 6 שניות מדפיסה את התאריך
-        //public static void Timer()
-        //{
-
-        //    var startTimeSpan = TimeSpan.Zero;
-        //    var periodTimeSpan = TimeSpan.FromMinutes(0.1);
-
-        //    var timer = new System.Threading.Timer((e) =>
-        //    {   
-        //        Console.Write(DateTime.Now);
-        //    }, null, startTimeSpan, periodTimeSpan);
-        //}
     }
 }

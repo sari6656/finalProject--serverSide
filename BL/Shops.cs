@@ -18,154 +18,146 @@ namespace BL
 {
     public class Shops
     {
-        public static ProjectEntities db = new ProjectEntities();
+
         //Register
         public async static Task<WebResult<LoginData<ShopDTO>>> Register(ShopDTO shopDto, Uri request)
         {
-            if (db.Shops.FirstOrDefault(w => w.passwordShop == shopDto.passwordShop) != null ||
+            using (ProjectEntities db = new ProjectEntities())
+            {
+                if (db.Shops.FirstOrDefault(w => w.passwordShop == shopDto.passwordShop) != null ||
                 db.Shops.FirstOrDefault(w => w.mailShop == shopDto.mailShop) != null)//אם יש כבר  כזה מייל או כזו סיסמה  
 
-                return new WebResult<LoginData<ShopDTO>>
-                {
-                    Message = "אחד מהפרטים שהוקשו כבר קיים במערכת",
-                    Status = false,
-                    Value = null
-                };
-            List<CategoryDTO> sourceCats = shopDto.Categories;
-            List<Category_to_shop> category_To_Shops = new List<Category_to_shop>();
-            foreach (var item in sourceCats)
-            {
-                db.Category_to_shop.Add(new Category_to_shop() { codeCategory = item.codeCategory, codeShop = shopDto.codeShop });
-            }
-
-            db.Shops.Add(ShopCast.GetShop(shopDto));
-            if (db.SaveChanges() > 0)//בדיקה שהמידע נשמר
-            {
-                var accessToken = await GetTokenDataAsync(shopDto.mailShop, shopDto.passwordShop, request);
-
-                if (!string.IsNullOrEmpty(accessToken))
-                {
                     return new WebResult<LoginData<ShopDTO>>
                     {
-                        Status = true,
-                        Message = "התחברת בהצלחה",
-                        Value = new LoginData<ShopDTO>
-                        {
-                            TokenJson = accessToken,
-                            objectDTO = shopDto
-                        }
+                        Message = "אחד מהפרטים שהוקשו כבר קיים במערכת",
+                        Status = false,
+                        Value = null
                     };
-
+                List<CategoryDTO> sourceCats = shopDto.Categories;
+                List<Category_to_shop> category_To_Shops = new List<Category_to_shop>();
+                foreach (var item in sourceCats)
+                {
+                    db.Category_to_shop.Add(new Category_to_shop() { codeCategory = item.codeCategory, codeShop = shopDto.codeShop });
                 }
-            }
-            return new WebResult<LoginData<ShopDTO>>
-            {
-                Status = false,
-                Message = "ההרשמה נכשלה",
-                Value = null
-            };
 
+                db.Shops.Add(ShopCast.GetShop(shopDto));
+                if (db.SaveChanges() > 0)//בדיקה שהמידע נשמר
+                {
+                    var accessToken = await GetTokenDataAsync(shopDto.mailShop, shopDto.passwordShop, request);
+
+                    if (!string.IsNullOrEmpty(accessToken))
+                    {
+                        return new WebResult<LoginData<ShopDTO>>
+                        {
+                            Status = true,
+                            Message = "התחברת בהצלחה",
+                            Value = new LoginData<ShopDTO>
+                            {
+                                TokenJson = accessToken,
+                                objectDTO = shopDto
+                            }
+                        };
+
+                    }
+                }
+                return new WebResult<LoginData<ShopDTO>>
+                {
+                    Status = false,
+                    Message = "ההרשמה נכשלה",
+                    Value = null
+                };
+            }
         }
         //Login
         public static async Task<WebResult<LoginData<ShopDTO>>> Login(string mail, string password, Uri requestUri)
         {
-            var shop = db.Shops.Where(w => w.mailShop == mail && w.passwordShop == password).FirstOrDefault();
-            if (shop != null)//אם המשתמש קיים במאגר המשך לקבלת טוקן, אחרת החזר שגיאה שהמתשמש לא קיים
+            using (ProjectEntities db = new ProjectEntities())
             {
-                ShopDTO shopDto = ShopCast.GetShopDTO(shop);
-
-                List<int> codesCategories = db.Category_to_shop.Where(c => c.codeShop == shop.codeShop).Select(x => x.codeCategory).ToList();
-                //Category category;
-                //shopDto.Categories = new List<CategoryDTO>();
-                //foreach (var item in codesCategories)
-                //{
-                //    category = db.Categories.Find(item);
-
-                //    if (category != null)
-                //        shopDto.Categories.Add(CategoryCast.GetCategoryDTO(category));
-                //}
-                var accessToken = await GetTokenDataAsync(shopDto.mailShop, shopDto.passwordShop, requestUri);
-                if (!string.IsNullOrEmpty(accessToken))
+                var shop = db.Shops.Where(w => w.mailShop == mail && w.passwordShop == password).FirstOrDefault();
+                if (shop != null)//אם המשתמש קיים במאגר המשך לקבלת טוקן, אחרת החזר שגיאה שהמתשמש לא קיים
                 {
-                    return new WebResult<LoginData<ShopDTO>>
-                    {
-                        Status = true,
-                        Message = "התחברת בהצלחה",
-                        Value = new LoginData<ShopDTO>
-                        {
-                            TokenJson = accessToken,
-                            objectDTO = shopDto
-                        }
-                    };
-                }
-            }
-            return new WebResult<LoginData<ShopDTO>>
-            {
-                Status = false,
-                Message = " אין משתמש רשום בשם וסיסמא זו  ",
-                Value = null
-            };
+                    ShopDTO shopDto = ShopCast.GetShopDTO(shop);
 
+                    List<int> codesCategories = db.Category_to_shop.Where(c => c.codeShop == shop.codeShop).Select(x => x.codeCategory).ToList();
+                    //Category category;
+                    //shopDto.Categories = new List<CategoryDTO>();
+                    //foreach (var item in codesCategories)
+                    //{
+                    //    category = db.Categories.Find(item);
+
+                    //    if (category != null)
+                    //        shopDto.Categories.Add(CategoryCast.GetCategoryDTO(category));
+                    //}
+                    var accessToken = await GetTokenDataAsync(shopDto.mailShop, shopDto.passwordShop, requestUri);
+                    if (!string.IsNullOrEmpty(accessToken))
+                    {
+                        return new WebResult<LoginData<ShopDTO>>
+                        {
+                            Status = true,
+                            Message = "התחברת בהצלחה",
+                            Value = new LoginData<ShopDTO>
+                            {
+                                TokenJson = accessToken,
+                                objectDTO = shopDto
+                            }
+                        };
+                    }
+                }
+                return new WebResult<LoginData<ShopDTO>>
+                {
+                    Status = false,
+                    Message = " אין משתמש רשום בשם וסיסמא זו  ",
+                    Value = null
+                };
+            }
         }
         //Update shop with categories
         public static WebResult<ShopDTO> Update(ShopDTO shopDTO)
         {
-            Shop shop = db.Shops.FirstOrDefault(f => f.mailShop == shopDTO.mailShop);
-            //למייל אסור להשתנות
-            if (shop == null)
+            using (ProjectEntities db = new ProjectEntities())
+            {
+
+                Shop shop = db.Shops.FirstOrDefault(f => f.mailShop == shopDTO.mailShop);
+                //למייל אסור להשתנות
+                if (shop == null)
+                    return new WebResult<ShopDTO>
+                    {
+                        Message = "החנות לא נמצאה",
+                        Status = false,
+                        Value = null
+                    };
+                shop.nameShop = shopDTO.nameShop;
+                shop.phoneShop = shopDTO.phoneShop;
+                shop.latitude = shopDTO.latitude;
+                shop.longitude = shopDTO.longitude;
+                shop.fromHour = shopDTO.fromHour;
+                shop.toHour = shopDTO.toHour;
+                shop.addressString = shopDTO.addressString;
+                List<CategoryDTO> sourceCats = shopDTO.Categories;
+                //למחוק קודם את כל הקטגוריות של החנות
+                List<Category_to_shop> category_To_Shops = db.Category_to_shop.ToList();
+                category_To_Shops.ForEach(item =>
+                {
+                    if (item.codeShop == shop.codeShop)
+                        db.Category_to_shop.Remove(item);
+                });
+
+                db.SaveChanges();
+
+                // להוסיף את כל הקטגוריות החדשות לחנות
+                foreach (var item in sourceCats)
+                {
+                    db.Category_to_shop.Add(new Category_to_shop() { codeCategory = item.codeCategory, codeShop = shop.codeShop });
+                }
+
+                db.SaveChanges();
                 return new WebResult<ShopDTO>
                 {
-                    Message = "החנות לא נמצאה",
-                    Status = false,
-                    Value = null
+                    Message = "הנתונים התעדכנו בהצלחה",
+                    Value = shopDTO,
+                    Status = true
                 };
-            shop.nameShop = shopDTO.nameShop;
-            shop.phoneShop = shopDTO.phoneShop;
-            shop.latitude = shopDTO.latitude;
-            shop.longitude = shopDTO.longitude;
-            shop.fromHour = shopDTO.fromHour;
-            shop.toHour = shopDTO.toHour;
-            shop.addressString = shopDTO.addressString;
-
-            //List<CategoryDTO> sourceCats = shopDTO.Categories;
-            //List<Category_to_shop> toRemove = new List<Category_to_shop>();
-            //db.Category_to_shop.ToList().ForEach(item =>
-            //{
-            //    if (item.codeShop == shop.codeShop)//מגיע לכל הקטגוריות שהחנות הנוכחית מוכרת
-            //    {
-            //        //אם המשתמש מחק קטגוריה זו מהחנות
-            //        if (sourceCats.Select(x => x.codeCategory).Contains(item.codeCategory) == false)
-            //            toRemove.Add(item);
-            //        //מוחקים בשביל אחר כך להוסיף את מה שנשאר
-            //        else
-            //            sourceCats.Remove(sourceCats.First(f => f.codeCategory == item.codeCategory));
-            //    }
-            //});
-
-            List<CategoryDTO> sourceCats = shopDTO.Categories;
-            //למחוק קודם את כל הקטגוריות של החנות
-            List<Category_to_shop> category_To_Shops = db.Category_to_shop.ToList();
-            category_To_Shops.ForEach(item =>
-            {
-                if (item.codeShop == shop.codeShop)
-                    db.Category_to_shop.Remove(item);
-            });
-
-            db.SaveChanges();
-
-            // להוסיף את כל הקטגוריות החדשות לחנות
-            foreach (var item in sourceCats)
-            {
-                db.Category_to_shop.Add(new Category_to_shop() { codeCategory = item.codeCategory, codeShop = shop.codeShop });
             }
-
-            db.SaveChanges();
-            return new WebResult<ShopDTO>
-            {
-                Message = "הנתונים התעדכנו בהצלחה",
-                Value = shopDTO,
-                Status = true
-            };
         }
         //Send email for request category
         public static WebResult<string> SendEmailForNewCategory(string categoryName, [UserLogged] ShopDTO shopDTO)
@@ -203,39 +195,47 @@ namespace BL
         //Returns the searches that found in that shop
         public static WebResult<SearchesForShop> getSearchesForShop([UserLogged] ShopDTO shopDTO)
         {
-            SearchesForShop searchesForShop= new SearchesForShop();
-            foreach (var category in shopDTO.Categories)
+            using (ProjectEntities db = new ProjectEntities())
             {
-                
-                //הוספת שם הקטגוריה
-                searchesForShop.namesCategories.Add(category.nameCategory);
-                //מתחילים לספור כמה יש מהקטגוריה הזו
-                int counter = 0;
-                foreach (var search in db.Searches)
+
+                SearchesForShop searchesForShop = new SearchesForShop();
+                foreach (var category in shopDTO.Categories)
                 {
-                    if (search.codeCategory == category.codeCategory && search.codeShop == shopDTO.codeShop)
-                        counter++;
+
+                    //הוספת שם הקטגוריה
+                    searchesForShop.namesCategories.Add(category.nameCategory);
+                    //מתחילים לספור כמה יש מהקטגוריה הזו
+                    int counter = 0;
+                    foreach (var search in db.Searches)
+                    {
+                        if (search.codeCategory == category.codeCategory && search.codeShop == shopDTO.codeShop)
+                            counter++;
+                    }
+                    searchesForShop.numbersCategories.Add(counter);
                 }
-                searchesForShop.numbersCategories.Add(counter);
+
+                return new WebResult<SearchesForShop>
+                {
+                    Message = "רשימת החיפושים לחנות נשלחה בהצלחה",
+                    Status = true,
+                    Value = searchesForShop
+                };
             }
-            
-            return new WebResult<SearchesForShop>
-            {
-                Message = "רשימת החיפושים לחנות נשלחה בהצלחה",
-                Status = true,
-                Value = searchesForShop
-            };
         }
 
         //Returns the categories for choosing
         public static WebResult<List<CategoryDTO>> GetAllCategories()
         {
-            return new WebResult<List<CategoryDTO>>
+            using (ProjectEntities db = new ProjectEntities())
             {
-                Message = "רשימת קטגוריות כללית נשלחה בהצלחה",
-                Value = CategoryCast.GetCategoriesDTO(db.Categories.ToList()),
-                Status = true
-            };
+
+                return new WebResult<List<CategoryDTO>>
+                {
+                    Message = "רשימת קטגוריות כללית נשלחה בהצלחה",
+                    Value = CategoryCast.GetCategoriesDTO(db.Categories.ToList()),
+                    Status = true
+                };
+            }
         }
 
         //Logout
