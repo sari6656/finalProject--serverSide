@@ -70,12 +70,17 @@ namespace BL.Helpers
                             if (getDistance(lat, lng, shop.latitude, shop.longitude) < search.distance)
                             {
                                 //if there is the category that the user search in that shop
+
                                 if (Casting.ShopCast.GetShopDTO(shop).Categories.FirstOrDefault(f => f.codeCategory == search.codeCategory) != null)
                                 {
-                                    //if shop is opened
-                                    TimeSpan fromHour = TimeSpan.Parse(shop.fromHour);
-                                    TimeSpan toHour = TimeSpan.Parse(shop.toHour);
+                                    TimeSpan fromHour = TimeSpan.MinValue, toHour = TimeSpan.MaxValue;
                                     TimeSpan now = DateTime.Now.TimeOfDay;
+                                    //if shop is opened
+                                    if (shop.fromHour != null && shop.toHour != null)
+                                    {
+                                        fromHour = TimeSpan.Parse(shop.fromHour);
+                                        toHour = TimeSpan.Parse(shop.toHour);                               
+                                    }
                                     if (fromHour < now && toHour > now)
                                     {
                                         searchesFound.Add(new SearchInShop()

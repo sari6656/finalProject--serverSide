@@ -43,7 +43,7 @@ namespace BL
                     db.SaveChanges();
                     return new WebResult<SearchDTO>
                     {
-                        Message = "יצירת חיפוש בוצעה בהצלחה",
+                        Message = "החיפוש הופעל בהצלחה",
                         Status = true,
                         Value = searchDTO
                     };
