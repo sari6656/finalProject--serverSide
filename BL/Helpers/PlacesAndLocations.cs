@@ -51,10 +51,11 @@ namespace BL.Helpers
         }
 
         //הפונקציה בודקת האם למיקום הזה יש למשתמש חנות קרובה עבור אחת מהקטגוריות
-        public static WebResult<SearchInShop> CheckDistance(UserIdWithLocation userIdWithLocation)
+        public static WebResult<List<SearchInShop>> CheckDistance(UserIdWithLocation userIdWithLocation)
         {
             using ( ProjectEntities db = new ProjectEntities())
             {
+                List<SearchInShop> searchesFound = new List<SearchInShop>();
                 double lat = userIdWithLocation.Lat;
                 double lng = userIdWithLocation.Lng;
                 var codeUser = db.Users.First(f => f.passwordUser == userIdWithLocation.Uuid).codeUser;
@@ -69,13 +70,16 @@ namespace BL.Helpers
                             if (getDistance(lat, lng, shop.latitude, shop.longitude) < 1000)
                             {
                                 //if there is the category that the user search in that shop
+                                
                                 if (Casting.ShopCast.GetShopDTO(shop).Categories.FirstOrDefault(f => f.codeCategory == search.codeCategory) != null)
                                 {
-                                    return new WebResult<SearchInShop>()
+                                    //if the shop is opened
+                                    TimeSpan fromHour = TimeSpan.Parse(shop.fromHour);
+                                    TimeSpan toHour = TimeSpan.Parse(shop.toHour);
+                                    TimeSpan now = DateTime.Now.TimeOfDay;
+                                    if(fromHour < now && toHour > now)
                                     {
-                                        Status = true,
-                                        Message = "found shop",
-                                        Value = new SearchInShop()
+                                        searchesFound.Add(new SearchInShop()
                                         {
                                             CodeSearch = search.codeSearch,
                                             NameProduct = search.nameProduct,
@@ -85,19 +89,19 @@ namespace BL.Helpers
                                             MailShop = shop.mailShop,
                                             FromHour = shop.fromHour,
                                             ToHour = shop.toHour
-                                        }
-                                    };
+                                        });
+                                    } 
                                 }
 
                             }
                         }
                     }
                 }
-                return new WebResult<SearchInShop>()
+                return new WebResult<List<SearchInShop>>()
                 {
                     Status = false,
                     Message = "not found close shop",
-                    Value = null
+                    Value = searchesFound
                 };
             }
            
